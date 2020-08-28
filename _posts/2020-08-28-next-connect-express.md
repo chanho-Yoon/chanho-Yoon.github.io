@@ -47,7 +47,7 @@ front 폴더에도 `express 서버`를 생성하기 위해 `server.js` 파일을
 
 ##### server.js
 
-```javascript
+```js
 // next 와 express 연결
 
 const express = require('express');
