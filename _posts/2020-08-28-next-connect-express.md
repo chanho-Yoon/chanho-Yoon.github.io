@@ -8,19 +8,22 @@ last_modified_at: 2020-08-28T01:17:00-18:00
 
 <br>
 
-> React 클론 코딩 인강을 듣는 중에 트위터와 비슷하게 클론코딩하면서 `프론트`와 `백엔드` 서버를 나눠서 개발하는데 알아뒀으면 하는 정보를 정리해보려고 합니다.
+> React 클론 코딩 인강을 듣는 중에 트위터와 비슷하게 클론코딩하면서 <br>`프론트`와 `백엔드` 서버를 나눠서 개발하는데 알아뒀으면 하는 정보를 정리해보려고 합니다.
 
 ## next + express 연결하는 이유
 
 트위터를 클론 코딩하면서 구현하는 기능중에 **팔로워**, **팔로우**, **좋아요** 등 클릭시 해당하는 유저의 데이터(id)를 받아와야 하는데 next.js는 `:/id` or `/like/:id`와 같은 동적 주소을 처리하지 못합니다.<br>
-이러한 문제를 해결할 수 있는 방법은 `express router`를 사용하면 해결 가능한 문제로, 처리하기 `프론트`에 `express`를 연결하면 된다.
+이러한 문제를 해결할 수 있는 방법은 `express router`를 사용하면 해결 가능한 문제입니다.<br>
+`프론트`에 `express`를 연결하면 된다.
 
 ## next + express 연결
 
 먼저 아래와 같이 입력해서 express 서버를 만드는데 필요한 package를 install 해야합니다.<br>
 
-    npm i express-session cookie-parser morgan dotenv
-    npm i -D nodemon
+```ssh
+npm i express-session cookie-parser morgan dotenv
+npm i -D nodemon
+```
 
 ##### 프로젝트 구조
 
