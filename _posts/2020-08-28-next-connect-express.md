@@ -20,9 +20,9 @@ last_modified_at: 2020-08-28T01:17:00-18:00
 
 먼저 아래와 같이 입력해서 express 서버를 만드는데 필요한 package를 install 해야합니다.<br>
 
-```ssh
-npm i express-session cookie-parser morgan dotenv
-npm i -D nodemon
+```shell
+$npm i express-session cookie-parser morgan dotenv
+$npm i -D nodemon
 ```
 
 back폴더에서 서버인 index.js에서 아래와 같은 코드를 추가해줘야 합니다.
@@ -120,7 +120,8 @@ app.prepare().then(() => {
 });
 ```
 
-위와 같은 부분이 next에 필요한 부분이다. 위 부분안에서 express 코드를 적어 사용하면 둘이 연결 되는 것입니다.
+위와 같은 부분이 next에 필요한 부분입니다. <br>
+저안에 express 코드를 적어 사용하면 둘이 연결 되는 것입니다.
 
 <br>
 
@@ -135,7 +136,7 @@ server.get('*', (req, res) => handle(req, res));
 ```
 
 - `return app.render(req, res, '/hashtag', { tag: req.params.tag });` 이 부분은 app이 next이기 때문에 next를 사용해서 요청응답을 넣어주는 것입니다. <br>
-- `, '/hashtag');` 이것의 의미는 해쉬태그를 클릭했을 시 실제로 보여지는 해쉬태그 페이지를 보여주는 것 입니다.<br>
+- `, '/hashtag');` 이것의 의미는 해쉬태그를 클릭했을 시 실제로 보여지는 해쉬태그 페이지를 보여주는 것입니다.<br>
 - `, { tag: req.params.tag }` 이건 이제 해당 페이지로 넘어갈 때 `tag`라는 정보도 같이 보내줍니다.
 
 ##### package.json 수정
@@ -148,7 +149,7 @@ server.get('*', (req, res) => handle(req, res));
 ```
 
 이제 next로 프론트 서버를 구동하는게 아닌 백엔드와 같이 nodemon으로 서버를 구동한다.<br>
-`nodemon`을 사용할 경우 `nodemon.json`이 필요 아래와 같이 생성
+`nodemon`을 사용할 경우 `nodemon.json`이 필요! 아래와 같이 생성
 
 ##### nodemon.json 생성
 
