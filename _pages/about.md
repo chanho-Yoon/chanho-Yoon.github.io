@@ -5,9 +5,7 @@ layout: single
 
 # 열심히 노력하는 개발자가 되도록 🧑🏻‍💻
 
-<!-- ![Image Alt 텍스트](/assets/images/chanhoprofile.jpg){: width="260"} -->
-
-<img src='/assets/images/chanhoprofile.jpg' alt='profile' style="width:260px; border-radius: 60%; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;"/>
+<img src='/assets/images/chanhoprofile.jpg' alt='profile' style="width:170px; border-radius: 60%; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;"/>
 
 ## 수상 내역
 
@@ -82,6 +80,6 @@ layout: single
 <br>
 # 현재 진행중인 프로젝트 ~ing 🔥
 
-## NodeBirdSNS(클론코딩)
+## React NodeBirdSNS(클론코딩)
 
 **사용한 기술**: `react`,`mysql`,`nodejs`,`sequelize`,`next.js`,`ant design`,`express`,`reducer`,`redux` 등등
