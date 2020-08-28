@@ -5,7 +5,9 @@ layout: single
 
 # 저를 소개합니다!
 
-![Image Alt 텍스트](/assets/images/chanhoprofile.jpg){: width="260"}
+<!-- ![Image Alt 텍스트](/assets/images/chanhoprofile.jpg){: width="260"} -->
+
+<img src='/assets/images/chanhoprofile.jpg' alt='profile' style="width:260px; border-radius: 60%; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;"/>
 
 ## 수상 내역
 
