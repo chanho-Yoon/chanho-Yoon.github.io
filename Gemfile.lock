@@ -97,6 +97,7 @@ PLATFORMS
 DEPENDENCIES
   bundler
   jekyll-last-modified-at
+  jekyll-sitemap
   minimal-mistakes-jekyll!
   rake (>= 12.3.3)
 
