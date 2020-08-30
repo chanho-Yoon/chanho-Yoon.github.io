@@ -1,9 +1,10 @@
 ---
 permalink: /about/
 layout: single
+title: '열심히 노력하는 개발자가 되도록 🧑🏻‍💻'
 ---
 
-# 열심히 노력하는 개발자가 되도록 🧑🏻‍💻
+<br>
 
 <img src='/assets/images/chanhoprofile.jpg' alt='profile' style="width:170px; border-radius: 60%; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;"/>
 
