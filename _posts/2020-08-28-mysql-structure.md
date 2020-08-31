@@ -1,10 +1,8 @@
 ---
 title: 'Mysql의 구조'
 excerpt: 'Mysql의 구조에 대해 공부하도록 하겠습니다.'
-categories:
-  - Mysql
-tags:
-  - Mysql
+categories: [Mysql]
+tags: [Mysql]
 last_modified_at: 2020-08-28T01:00:00-02:00
 ---
 
