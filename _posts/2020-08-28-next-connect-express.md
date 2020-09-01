@@ -97,10 +97,10 @@ app.prepare().then(() => {
     }),
   );
   server.get('/hashtag/:tag', (req, res) => {
-    return app.render(req, res, '/hashtag');
+    return app.render(req, res, '/hashtag', { tag: req.params.tag });
   });
   server.get('/user/:id', (req, res) => {
-    return app.render(req, res, '/user');
+    return app.render(req, res, '/user', { tag: req.params.id });
   });
   server.get('*', (req, res) => handle(req, res));
 
