@@ -4,6 +4,8 @@ excerpt: 'next와 express를 연결하는 이유와 방법에 대해 공부해�
 categories: [next, express]
 tags: [next, express]
 last_modified_at: 2020-08-28T01:17:00-18:00
+toc: true
+toc_label: '목차'
 ---
 
 <br>

@@ -2,8 +2,10 @@
 title: '이터러블 프로토콜, 이터러블 / 이터레이터'
 excerpt: '이터러블(iterable) 과 이터레이터(iterator)가 무엇인지 알아보도록 하겠습니다.'
 categories: [JavaScript]
-tags: [iterable,iterator]
+tags: [iterable, iterator]
 last_modified_at: 2020-08-31T01:17:00-18:00
+toc: true
+toc_label: '목차'
 ---
 
 ## 이터러블이란
@@ -20,9 +22,9 @@ last_modified_at: 2020-08-31T01:17:00-18:00
 ## 이터러블 Symbol.iterator 객체 확인
 
 ```jsx
-const arr = [1,2,3]
+const arr = [1, 2, 3];
 
-console.dir(arr)
+console.dir(arr);
 
 /*
 Array(3)
@@ -32,7 +34,7 @@ Array(3)
 */
 ```
 
-위와 같이 `Symbol(Symbol.iterator): f values()` 가 존재한다는 걸 알 수 있습니다. 
+위와 같이 `Symbol(Symbol.iterator): f values()` 가 존재한다는 걸 알 수 있습니다.
 
 ## 이터레이터 `{ value,done }` 반환하는 next() 객체 확인
 

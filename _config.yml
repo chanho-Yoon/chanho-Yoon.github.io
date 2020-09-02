@@ -269,6 +269,7 @@ defaults:
       comments: true
       share: true
       related: true
+      toc_sticky: true
 
   # _pages
   - scope:
@@ -281,6 +282,7 @@ defaults:
       comments: false
       share: true
       related: false
+      toc_sticky: true
 
 # Optional. The default date format, used if none is specified in the tag.
 last-modified-at:

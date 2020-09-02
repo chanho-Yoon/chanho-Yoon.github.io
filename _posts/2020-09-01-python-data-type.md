@@ -4,6 +4,8 @@ excerpt: '파이썬의 자료형에 대해서 공부하도록 하겠습니다.'
 categories: [Python]
 tags: [python data type]
 last_modified_at: 2020-09-01T01:15:00-16:00
+toc: true
+toc_label: '목차'
 ---
 
 ## 파이썬의 자료형
@@ -32,9 +34,6 @@ last_modified_at: 2020-09-01T01:15:00-16:00
 
 ## 불 자료형
 
-<details markdown="1">
-<summary>내용(클릭)</summary>
-<br />
 불(bool) 자료형은 참(True)과 거짓(False)를 반환하는 자료형입니다.
 
 ```python
@@ -82,13 +81,8 @@ True
 True
 ```
 
-</details>
-
 ## 숫자형
 
-<details markdown="1">
-<summary>내용(클릭)</summary>
-<br />
 숫자형은 정수, 실수와 같은 숫자 형태로 된 자료형입니다.
 
 ```python
@@ -130,13 +124,8 @@ True
 |  `%`   | 나눗셈의 나머지를 구하는 연산자                               |
 |  `**`  | 제곱을 구하는 연산자                                          |
 
-</details>
-
 ## 문자열
 
-<details markdown="1">
-<summary>내용(클릭)</summary>
-<br />
 ```python
 "Hello World!"
 "777"
@@ -207,13 +196,8 @@ True
 50
 ```
 
-</details>
-
 ## 리스트(List)
 
-<details markdown="1">
-<summary>내용(클릭)</summary>
-<br />
 리스트를 사용하는 이유는 간단합니다. 조금더 편하게 집합을 표현하기 위해서 입니다.<br/>
 예를 들어 동물의 이름들을 나열하라고 한다면
 
@@ -285,7 +269,7 @@ monkey tiger cat dolphin
 ['monkey', 'cat', 'dolphin']
 ```
 
-## 리스트 관련된 함수들
+### 리스트 관련된 함수들
 
 |   함수    | <center>설명</center>                                                           |
 | :-------: | :------------------------------------------------------------------------------ |
@@ -299,22 +283,13 @@ monkey tiger cat dolphin
 |  `count`  | count(x) : 리스트안에 요소 x값이 몇 개가 있는지                                 |
 | `extend`  | extend(x) : x값은 리스트만 적을 수 있고 기존 리스트에서 x 리스트를 더하게 된다. |
 
-</details>
-
 ## 튜플(Tuple)
 
-<details markdown="1">
-<summary>내용(클릭)</summary>
-<br />
 튜플은 기존에 <span style="color:red">값을 변화시킬 수 없다는 것</span>을 제외하고 **리스트(List)**와 완전히 동일합니다.
 **리스트**와 마찬가지로 값을 변화시키는 작업 이외에 인덱싱,슬라이싱,더하기,곱하기,길이 구하는 방법은 **리스트**와 같습니다.
-</details>
 
 ## 딕셔너리(dictionary)
 
-<details markdown="1">
-<summary>내용(클릭)</summary>
-<br />
 딕셔너리는 `Key`와 `Value`를 한 쌍으로 갖는 자료형으로 리스트나 튜플처럼 순차적으로 해당 요소값들을 구하지 않고 `Key`값을 통해 `Value`값을 얻습니다. <br>
 결국 순차적으로 데이터를 찾지 않고 `Key`값을 통해 데이터를 찾는다는게 큰 특징입니다.
 
@@ -353,13 +328,8 @@ monkey tiger cat dolphin
 - 딕셔너리의 Key는 고유한 값으로 중복해서 선언했을 경우 하나를 제외한 나머지 Key들은 무시됩니다.
 - 또한 위의 예제에서 처럼 `Value` 값에 `List`값 을 삽입할 순 있지만, Key값에는 `List`값을 삽입할 수 없습니다.
 
-</details>
-
 ## 집합 자료형
 
-<details markdown="1">
-<summary>내용(클릭)</summary>
-<br />
 집합 자료형은 한 변수에 저장된 **리스트** 또는 **문자열**에 속해있는 값들을 나열해줍니다.<br>
 조금 더 간단하게 설명하자면 집합에 관련된 것들을 쉽게 처리하기 위해 만든 자료형입니다.
 `set()` 키워드를 사용해서 만들 수 있습니다.
@@ -384,7 +354,5 @@ monkey tiger cat dolphin
 
 - 집합 자료형은 중복을 허용하지 않습니다.
 - 집합 자료형은 순서가 없습니다.
-
-</details>
 
 > [참고: 점프 투 파이썬](https://wikidocs.net/13)

@@ -4,6 +4,8 @@ excerpt: '제너레이터(Generaitor)에 대해 알아보겠습니다.'
 categories: [JavaScript]
 tags: [Generaitor]
 last_modified_at: 2020-08-31T01:19:00-20:00
+toc: true
+toc_label: '목차'
 ---
 
 ## 제너레이터란?
@@ -22,7 +24,7 @@ ES6에서 도입된 제너레이터 함수는 [이터러블](/javascript/js-iter
 
 ### 2. 이터레이터 이터러블을 쉽게 사용할 수 있다.
 
-제너레이터 함수는 `next()`와 `[Symbol.iterator]()` 를 내장하고 있어 직접 `next()` 메서드와 `[Symbol.iterator]()`을 사용해야합니다. 
+제너레이터 함수는 `next()`와 `[Symbol.iterator]()` 를 내장하고 있어 직접 `next()` 메서드와 `[Symbol.iterator]()`을 사용해야합니다.
 
 #### 직접 이터레이터를 작성한 코드
 
@@ -30,23 +32,22 @@ ES6에서 도입된 제너레이터 함수는 [이터러블](/javascript/js-iter
 
 ```jsx
 const iterableObject = {
-	[Symbol.iterator]() {
-		let cnt = 0;
-		return {
-			next() {
-				cnt++
-				if(cnt < 3) {
-					return { value: cnt, done: false }
-				}
-				else {
-					return { value: '', done: true }
-				}
-			}
-		}
-	}
-}
-for(let data of iterableObject) {
-	console.log(data)
+  [Symbol.iterator]() {
+    let cnt = 0;
+    return {
+      next() {
+        cnt++;
+        if (cnt < 3) {
+          return { value: cnt, done: false };
+        } else {
+          return { value: '', done: true };
+        }
+      },
+    };
+  },
+};
+for (let data of iterableObject) {
+  console.log(data);
 }
 ```
 
@@ -56,11 +57,11 @@ for(let data of iterableObject) {
 
 ```jsx
 function* iterableObject() {
-	yield 0;
-	yield 1;
+  yield 0;
+  yield 1;
 }
-for(let data of iterableObject()) {
-	console.log(data)
+for (let data of iterableObject()) {
+  console.log(data);
 }
 ```
 
