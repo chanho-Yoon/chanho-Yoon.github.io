@@ -40,7 +40,7 @@ app.use(
 
 이와 같이 추가해준 이유는 프론트 서버와 백엔드 서버의 포트번호가 다른 것을 해결해주는 미들웨어로 위와 같이 cors를 사용해서 origin, credentials true로 해주면 서로 쿠키를 주고 받을 수 있게 됩니다.
 
-##### 프로젝트 구조
+### 프로젝트 구조
 
 ```
 .
@@ -63,7 +63,7 @@ app.use(
 
 front 폴더에도 `express 서버`를 생성하기 위해 `server.js` 파일을 만들어줍니다.
 
-##### server.js 생성
+### server.js 생성
 
 ```js
 // next 와 express 연결
@@ -141,7 +141,7 @@ server.get('*', (req, res) => handle(req, res));
 - `, '/hashtag');` 이것의 의미는 해쉬태그를 클릭했을 시 실제로 보여지는 해쉬태그 페이지를 보여주는 것입니다.<br>
 - `, { tag: req.params.tag }` 이건 이제 해당 페이지로 넘어갈 때 `tag`라는 정보도 같이 보내줍니다.
 
-##### package.json 수정
+### package.json 수정
 
 ```json
 "scripts": {
@@ -153,7 +153,7 @@ server.get('*', (req, res) => handle(req, res));
 이제 next로 프론트 서버를 구동하는게 아닌 백엔드와 같이 nodemon으로 서버를 구동한다.<br>
 `nodemon`을 사용할 경우 `nodemon.json`이 필요! 아래와 같이 생성
 
-##### nodemon.json 생성
+### nodemon.json 생성
 
 ```json
 {
