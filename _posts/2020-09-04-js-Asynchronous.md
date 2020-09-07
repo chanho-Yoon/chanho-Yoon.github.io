@@ -22,7 +22,7 @@ toc_label: '목차'
 
 병원 진료를 볼때에 창구에 접수를 하기 위해서 번호표를 뽑습니다. 저의 번호표는 3번으로 저의 앞에는 1번 2번 번호표를 가진 분이 존재합니다.
 
-1번 손님 접수요청 -> 창구에서 응답 -> 접수완료 -> 2번 손님 접수요청 -> 창구에서 응답 -> 접수완료 -> 3번 손님 접수요청 ....
+1번 손님 접수요청 -> 창구에서 응답 -> 접수완료 -> 2번 손님 접수요청 -> 창구에서 응답 -> 접수완료 -> 3번 손님 접수요청 ..
 
 위의 예시와 같이 동기적 방식은 순서가 확실히 정해져있습니다.
 
@@ -295,4 +295,5 @@ const funcAsync = async () => {
 
 게시글도 아래의 링크를 참조해서 공부 및 복습겸 작성했습니다.
 
-> [참고](https://velog.io/@yejinh/%EB%B9%84%EB%8F%99%EA%B8%B0-%ED%8C%8C%ED%97%A4%EC%B9%98%EA%B8%B0) > [참고](https://www.youtube.com/watch?v=VMO4yX7kkW8) > [참고: reactjs](https://reactjs.org/docs/react-component.html)
+> [참고 : https://velog.io/@yejinh](https://velog.io/@yejinh/%EB%B9%84%EB%8F%99%EA%B8%B0-%ED%8C%8C%ED%97%A4%EC%B9%98%EA%B8%B0) <br>
+> [참고 : https://www.youtube.com/watch?v=VMO4yX7kkW8](https://www.youtube.com/watch?v=VMO4yX7kkW8)
