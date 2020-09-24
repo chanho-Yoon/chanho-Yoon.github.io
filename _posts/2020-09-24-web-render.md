@@ -49,7 +49,7 @@ element(요소)들의 크기나 위치가 바뀌게 되면 DOM,CSSOM을 새로 �
 
 ### composition 단계로 직접 레이어를 전달하는 방법
 
-만약 element(요소)들의 크기나 위치가 바뀐다거나 색상이 바뀌는 요소들은 transform, opacity 속성을 통해서 Layout, paint 단계를 건너뛰고 composition 단계로 직접 레이어를 전달 할 수 있습니다. 이러한게 가능한 이유는 transform, opacity는 GPU에서 관여하기 때문입니다.
+만약 element(요소)들의 크기나 위치가 바뀐다거나 불투명도가 바뀌는 요소들은 transform, opacity 속성을 통해서 Layout, paint 단계를 건너뛰고 composition 단계로 직접 레이어를 전달 할 수 있습니다. 이러한게 가능한 이유는 transform, opacity는 GPU에서 관여하기 때문입니다.
 
 ### 애니메이션을 JS, CSS로 DOM요소를 조작할 때 가장 베스트
 
