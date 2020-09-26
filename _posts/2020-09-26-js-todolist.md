@@ -344,27 +344,25 @@ const contentBody = document.querySelector('.content-body');
 
 const deleteToDo = (event) => {
   const remove = event.target.parentNode.parentNode;
-  console.log(event.target);
-  console.log(event.target.parentNode);
-  console.log(event.target.parentNode.parentNode);
   contentBody.removeChild(remove);
 };
 
 const inputText = () => {
   const bodySection = document.createElement('div');
-  bodySection.className = 'content-body__section';
   const viewText = document.createElement('div');
-  viewText.className = 'viewText';
   const dellIcon = document.createElement('button');
+  const span = document.createElement('span');
+  const i = document.createElement('i');
+  const text = input.value;
+
+  bodySection.className = 'content-body__section';
+  viewText.className = 'viewText';
   dellIcon.className = 'dellIcon';
 
   contentBody.appendChild(bodySection);
   bodySection.appendChild(viewText);
   bodySection.appendChild(dellIcon);
 
-  const span = document.createElement('span');
-  const i = document.createElement('i');
-  const text = input.value;
   span.className = 'toDoList';
   span.textContent = text;
   i.className = 'far fa-trash-alt';
