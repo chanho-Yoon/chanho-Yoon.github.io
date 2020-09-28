@@ -386,4 +386,4 @@ input.addEventListener('keydown', (event) => {
 
 **참고**
 
-> 나의 머리..
+>
