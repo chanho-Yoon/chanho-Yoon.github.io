@@ -16,5 +16,5 @@ Gemfile.lock
 _site/
 .sass-cache/
 .jekyll-cache/
-
+.idea/
 markdownTemplate.md

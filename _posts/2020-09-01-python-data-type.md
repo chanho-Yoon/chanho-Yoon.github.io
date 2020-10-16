@@ -2,7 +2,7 @@
 title: '파이썬의 자료형'
 excerpt: '파이썬의 자료형에 대해서 공부하도록 하겠습니다.'
 categories: [Python]
-tags: [python data type]
+tags: [python data type,파이썬 자료형, 파이썬 리스트, 파이썬 튜플, 파이썬 딕셔너리]
 last_modified_at: 2020-09-01T01:15:00-16:00
 toc: true
 toc_label: '목차'

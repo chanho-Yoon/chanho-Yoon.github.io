@@ -2,7 +2,7 @@
 title: '제너레이터(Generaitor)'
 excerpt: '제너레이터(Generaitor)에 대해 알아보겠습니다.'
 categories: [JavaScript]
-tags: [Generaitor]
+tags: [Generaitor,제너레이터, 자바스크립트 제너레이터]
 last_modified_at: 2020-08-31T01:19:00-20:00
 toc: true
 toc_label: '목차'

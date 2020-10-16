@@ -2,7 +2,7 @@
 title: '자바스크립트로 할 일 목록 만들어보기'
 excerpt: '자바스크립트 공부하면서 복습겸 순수 자바스크립트만을 이용하여 To Do List(할 일 목록)를 만들어 보았습니다.'
 categories: [JavaScript]
-tags: [JavaScript ToDoList]
+tags: [JavaScript ToDoList, 자바스크립트 할 일 목록 만들기]
 last_modified_at: 2020-09-26T01:15:00-16:00
 toc: true
 toc_label: '목차'

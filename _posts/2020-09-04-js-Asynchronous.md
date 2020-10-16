@@ -2,7 +2,7 @@
 title: '자바스크립트 비동기적 처리'
 excerpt: '자바스크립트 비동기적 처리에 대해 공부하겠습니다.'
 categories: [JavaScript]
-tags: [Javascript asynchronous]
+tags: [Javascript asynchronous, 자바스크립트 비동기처리]
 last_modified_at: 2020-09-04T01:15:00-16:00
 toc: true
 toc_label: '목차'

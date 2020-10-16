@@ -2,7 +2,7 @@
 title: '파이썬 함수'
 excerpt: '파이썬 함수에 대해 공부하겠습니다.'
 categories: [Python]
-tags: [Python Function]
+tags: [Python Function, 파이썬 함수]
 last_modified_at: 2020-09-10T01:15:00-16:00
 toc: true
 toc_label: '목차'

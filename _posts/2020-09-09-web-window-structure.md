@@ -2,7 +2,7 @@
 title: 'Browser 구조'
 excerpt: 'Browser 구조에 대해 공부하겠습니다.'
 categories: [Web]
-tags: [Browser structure]
+tags: [Browser structure,브라우저 구조]
 last_modified_at: 2020-09-09T01:15:00-16:00
 toc: true
 toc_label: '목차'

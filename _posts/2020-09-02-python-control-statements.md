@@ -2,7 +2,7 @@
 title: '파이썬의 제어문'
 excerpt: '파이썬의 제어문에 대해서 공부하도록 하겠습니다.'
 categories: [Python]
-tags: [python control statements]
+tags: [python control statements, 파이썬 제어문]
 last_modified_at: 2020-09-02T01:15:00-16:00
 toc: true
 toc_label: '목차'

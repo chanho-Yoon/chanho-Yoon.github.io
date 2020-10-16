@@ -2,7 +2,7 @@
 title: '브라우저 렌더링 과정 및 css animation 최적화'
 excerpt: '브라우저 렌더링 과정과 reflow와 repaint에 대해 알아보겠습니다.'
 categories: [Web]
-tags: [render]
+tags: [render, 브라우저 렌더링 과정, css animation 최적화]
 last_modified_at: 2020-09-24T01:15:00-16:00
 toc: true
 toc_label: '목차'
