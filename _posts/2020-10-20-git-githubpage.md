@@ -47,7 +47,7 @@ branch가 `gh-pages`로 되어 있는 것을 볼 수 있습니다.
 
 <img src='/assets/images/githubpageCheck.png' alt='profile' style="width:600px; margin-top:15px; margin-bottom:15px; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;"/>
 
-간혹 바로 반영이 안될 때가 있습니다. 이러할 경우 몇 분 정도 기다렸다가 들어가시면 정상으로 접속됩니다.
+간혹 바로 반영이 안될 때가 있습니다. 이러할 경우 몇 분 정도 기다렸다가 들어가시면 정상적으로 접속됩니다.
 
 ---
 
