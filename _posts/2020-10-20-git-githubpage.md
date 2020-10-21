@@ -32,7 +32,7 @@ git push origin master
 ```
 
 ### GH-PAGES
-`gh-pages` 브랜치를 생성하고 원격 저장소로 branch를 push 합니다.
+`gh-pages` 브랜치를 생성하고 원격 저장소로 branch를 push 합니다. <br><br>
 <strong><span style="color:red">주의사항</span></strong>
 - 브랜치명은 반드시 `gh-pages`로 생성해야 합니다.
 
