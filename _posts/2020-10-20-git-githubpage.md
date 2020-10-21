@@ -9,7 +9,7 @@ toc_label: '목차'
 ---
 ## 깃허브 페이지로 웹 호스팅 하기
 
-간단하게 Github Page를 이용해서해서 웹 무료 호스팅을 해보도록 하겠습니다.
+간단하게 Github Page를 이용해서 웹 무료 호스팅을 해보도록 하겠습니다.
 
 ### REPOSITORY 생성
 repository를 생성하고 Repository name을 지정합니다. <br>
@@ -21,7 +21,7 @@ repository를 생성하고 Repository name을 지정합니다. <br>
 ### GIT INIT
 호스팅을 할 프로젝트 폴더로 들어가 git 저장소를 생성한 뒤 `commit` -> `push` 합니다. <br><br>
 <strong><span style="color:red">주의사항</span></strong>
-- 반드시 파일 이름이 `index.html`로 프로젝트 폴더내에 파일이 존재해야합니다.
+- 프로젝트 폴더내에 반드시 `index.html` 파일이 존재해야 합니다.
 
 ```
 git init
