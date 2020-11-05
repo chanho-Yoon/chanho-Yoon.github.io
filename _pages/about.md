@@ -23,6 +23,22 @@ title: '열심히 노력하는 개발자가 되도록 🧑🏻‍💻'
 
 # 완료한 프로젝트 ✅
 
+## 당근 게임 ( 두더지 잡기 )
+
+**사용한 기술** : `Vanilla JS`
+
+<details markdown="1">
+<summary>설명</summary>
+
+- 순수 자바스크립트를 활용한 두더지 응용게임
+- 시간내에 목표치의 당근을 클릭해야 하는 게임
+- 게임 레벨에 따라 당근과 벌레의 수가 증가하고 벌레는 계속해서 움직임
+- 벌레 클릭시 게임은 패배 처리
+</details>
+
+[깃허브 링크](https://github.com/chanho-Yoon/Whac-A-Carrot){: target="\_blank"} <br>
+[프로젝트 링크](https://chanho-yoon.github.io/Whac-A-Carrot/){: target="\_blank"}
+
 ## catchmind
 
 **사용한 기술** : `nodeJS`,`gulp`,`sass`,`babel`,`SocketIO` <br>
@@ -37,6 +53,7 @@ title: '열심히 노력하는 개발자가 되도록 🧑🏻‍💻'
 
 </details>
 
+[깃허브 링크](https://github.com/chanho-Yoon/catchmind){: target="\_blank"} <br>
 [프로젝트 링크](https://catchmind-ych.herokuapp.com/){: target="\_blank"}
 
 ## Mutube(클론코딩)
@@ -50,7 +67,8 @@ title: '열심히 노력하는 개발자가 되도록 🧑🏻‍💻'
 
 </details>
 
-[프로젝트 링크](https://powerful-fortress-80578.herokuapp.com/)
+[깃허브 링크](https://github.com/chanho-Yoon/MuTube){: target="\_blank"} <br>
+[프로젝트 링크](https://powerful-fortress-80578.herokuapp.com/){: target="\_blank"}
 
 ## 가상의 저축앱
 
