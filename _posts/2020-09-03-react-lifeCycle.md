@@ -8,7 +8,7 @@ toc: true
 toc_label: '목차'
 ---
 
-## React Life Cycle
+## 1. React Life Cycle
 
 React를 사용하면 각 component 단위로 UI를 화면에 보이게할 수 있고, 다른 UI로 바꾸거나 현재 UI를 스크린에서 없앨 수 있다. 따라서 각각의 Component들은 **생성 =>** **업데이트 => 제거 **의 생명주기함수(life cycle method)를 가지고 있다. 간단하게 설명하자면 react component를 생성하고 없애는 방법을 가지고 있다.
 
@@ -19,11 +19,11 @@ component가 생성 될 때,
 -   render 전에 호출되는 function이 존재
 -   render 후에 호출되는 function이 존재
 
-## Component Lifecycle
+## 2. Component Lifecycle
 
 일반적으로 자주 사용하는 것은 **굵게**, 나머지는 드물게 사용
 
-### Mounting
+### 2.1 Mounting
 처음 실행(태어남), 컴포넌트 인스턴스가 작성되어 DOM에 삽입될 때 아래와 같은 순서로 호출
 <br>
 component가 mount될 때, constructor()을 먼저 호출하고 render()을 호출, 그 다음 componentDidMount() 호출
@@ -33,7 +33,7 @@ component가 mount될 때, constructor()을 먼저 호출하고 render()을 호�
 -   **render()**
 -   **componentDidMount()**
 
-### Updating
+### 2.2 Updating
 일반적으로 업데이트시 발생, 구성 요소를 다시 렌더링 할 때 아래와 같은 순서로 호출
 
 -   static getDerivedStateFromProps()
@@ -42,7 +42,7 @@ component가 mount될 때, constructor()을 먼저 호출하고 render()을 호�
 -   getSnapshotBeforeUpdate()
 -   **componentDidUpdate()**
 
-### Unmounting
+### 2.3 Unmounting
 component가 죽는 것 , 이 메소드는 컴포넌트가 DOM에서 제거 될 때 호출됩니다.
 
 -   **componentWillUnmount()**

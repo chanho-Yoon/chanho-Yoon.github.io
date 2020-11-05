@@ -8,13 +8,13 @@ toc: true
 toc_label: '목차'
 ---
 
-## To Do List
+## 1. To Do List
 
   <img src='/assets/images/todolistmain.png' alt='profile' style="width:600px; margin-top:15px; margin-bottom:15px; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;"/>
 
 자바스크립트를 공부하면서 복습겸해서 ToDoList(할 일 목록)을 순수 자바스크립트만을 사용하여 구현해보았습니다. localStorage는 사용하지 않고 추가,삭제 기능만 간단하게 구현했습니다.
 
-### 시작
+### 1.1 시작
 
 우선 프로젝트를 시작하기에 앞서 [fontawesome](https://fontawesome.com/)을 이용하여 icon 이미지를 사용했습니다. <br>
 `HTML`, `CSS` 부분은 자세히 설명하지 않고 넘어가겠습니다.<br>
@@ -27,9 +27,9 @@ toc_label: '목차'
 |____index.css
 ```
 
-## ToDoList html,css 부분
+## 2. ToDoList html,css 부분
 
-### index.html
+### 2.1 index.html
 
 ```html
 <!DOCTYPE html>
@@ -76,7 +76,7 @@ html파일의 태그 class에 간단히 설명하자면 아래와 같습니다.
 4. .content-enter : 할 일 목록을 입력할 곳
 5. .content-footer : 할 일을 입력한 후에 전송할 버튼
 
-### index.css
+### 2.2 index.css
 
 ```css
 body {
@@ -193,9 +193,9 @@ body {
 
 <img src='/assets/images/todolistcss.png' alt='profile' style="width:600px; margin-top:15px; margin-bottom:15px; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;"/>
 
-## ToDoList javascript 부분
+## 3. ToDoList javascript 부분
 
-### index.js
+### 3.1 index.js
 
 <img src='/assets/images/todolistcss.png' alt='profile' style="width:300px; margin-top:15px; margin-bottom:15px; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;"/>
 
@@ -334,7 +334,7 @@ const deleteToDo = (event) => {
 처음 event.target을 했을 경우 저희는 삭제 아이콘을 클릭 했기 때문에 `<i class>...</i>` 요소를 가져옵니다.<br>parentNode를 했을 경우에는 i태그의 부모인 `<button class="dellIcon">...</button>` 요소까지 가져옵니다.<br>
 parentNode.parentNode를 했을 경우에는 button 태그의 부모인 `<div class="content-body__section">...</div>` 요소까지 가져오는 것을 확인할 수 있습니다. <br>
 
-### 최종 index.js 코드
+### 3.2 최종 index.js 코드
 
 ```js
 const input = document.getElementById('text-input');

@@ -8,18 +8,18 @@ toc: true
 toc_label: '목차'
 ---
 
-## 이터러블이란
+## 1. 이터러블이란
 
 **이터러블 프로토콜**은 ES6에서 도입된 것으로 순회(반복) 가능한 객체를 나타내는 프로토콜이다.
 
 `for...of` 반복문, `...` 전개 연산자, 구조 분해 등과 함께 동작할 수 있도록 한 프로토콜이다.
 
-## iterable / iterator
+## 2. iterable / iterator
 
 - 이터러블 : 이터레이터를 반환하는 `Symbol.iterator`라는 키값의 메소드를 가진 객체
 - 이터레이터: `{ value, done }` 객체를 반환하는 next() 메소드를 가진 객체
 
-## 이터러블 Symbol.iterator 객체 확인
+## 3. 이터러블 Symbol.iterator 객체 확인
 
 ```jsx
 const arr = [1, 2, 3];
@@ -36,7 +36,7 @@ Array(3)
 
 위와 같이 `Symbol(Symbol.iterator): f values()` 가 존재한다는 걸 알 수 있습니다.
 
-## 이터레이터 `{ value,done }` 반환하는 next() 객체 확인
+## 4. 이터레이터 `{ value,done }` 반환하는 next() 객체 확인
 
 ```jsx
 console.log(arr[Symbol.iterator]())
