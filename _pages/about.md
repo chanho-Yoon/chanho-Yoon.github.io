@@ -97,8 +97,11 @@ title: '열심히 노력하는 개발자가 되도록 🧑🏻‍💻'
 - 아이디어는 좋으나 완성도가 떨어진다는 지적을 받았다..
 
 <br>
+
+<!-- 
 # 현재 진행중인 프로젝트 ~ing 🔥
 
 ## React NodeBirdSNS(클론코딩)
 
 **사용한 기술**: `react`,`mysql`,`nodejs`,`sequelize`,`next.js`,`ant design`,`express`,`reducer`,`redux` 등등
+-->
