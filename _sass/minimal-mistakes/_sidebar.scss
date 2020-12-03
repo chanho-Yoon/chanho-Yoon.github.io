@@ -122,8 +122,8 @@
   height: 36px;
 
   @include breakpoint($large) {
-    display: flex;
-	justify-content: center;
+    display: block;
+	margin-left: 10px;
     width: auto;
     height: auto;
   }
