@@ -122,7 +122,8 @@
   height: 36px;
 
   @include breakpoint($large) {
-    display: block;
+    display: flex;
+	justify-content: center;
     width: auto;
     height: auto;
   }
@@ -130,10 +131,10 @@
   img {
     max-width: 160px;
     border-radius: 50%;
-
     @include breakpoint($large) {
       padding: 0px;
       border: 1px solid $border-color;
+	  box-shadow: 0 3px 10px 1px rgba(0,0,0,.48);
     }
   }
 }
