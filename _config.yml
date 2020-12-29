@@ -16,7 +16,7 @@ minimal_mistakes_skin: 'mint' # "air", "aqua", "contrast", "dark", "dirt", "neon
 
 # Site Settings
 locale: 'ko-KR'
-title: '개발 공부 일지'
+title: 'Chanho Dev'
 title_separator: '-'
 subtitle: # site tagline that appears below site title in masthead
 name: 'Chanho Yoon'
