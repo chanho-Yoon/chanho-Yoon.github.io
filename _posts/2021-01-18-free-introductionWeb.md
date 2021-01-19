@@ -10,6 +10,8 @@ toc_label: '목차'
 
 <img src='/assets/images/selfIntroduction.gif' alt='profile' style="width:600px; margin-top:15px; margin-bottom:15px; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;"/>
 
+[자기소개](https://chanho-yoon.github.io/self-introduction-web/){:target="\_blank"} <br>
+
 ## 왜 만들게 되었나?? 🤔
 
 2월 15일 위코드 개강 전에 진행하는 사전스터디 기간에 1주차에 자기소개 웹을 만드는 과제가 있다.<br>
@@ -26,7 +28,4 @@ toc_label: '목차'
 수정해야 할 부분은 수정했지만 아직은 허점이 많고 완벽하지 않은 곳이 많다. 만약 제대로 설계를 하고 완성했더라면 후에 기능을 추가하거나 컨텐츠를 추가할 때 걱정이 안될텐데, 여기서 또 다른 컨텐츠를 추가 한다고 생각하면 걱정부터 앞선다. "css, layout 안깨지게 해주세요. 🙏🏻" 라고 말이다.. <br>
 아직은 많이 부족하지만 계속해서 조금 더 나아지는, 괜찮은 개발자가 되도록 차츰 노력해야겠다~!
 
-
 ---
-
-
