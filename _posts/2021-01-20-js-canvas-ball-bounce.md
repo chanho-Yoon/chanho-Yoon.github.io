@@ -3,7 +3,7 @@ title: 'canvas 공튀기기'
 excerpt: 'canvas를 이용한 공튀기기를 만듭니다' 
 categories: [JavaScript]
 tags: [canvas, canvas 공 튀기기, javascript game]
-last_modified_at: 2021-01-20T01:18:00-19:00, 
+last_modified_at: 2021-01-20T01:18:00-19:00
 toc: true 
 toc_label: '목차'
 ---
