@@ -11,6 +11,9 @@ toc_label: '목차'
 > 자바스크립트로 게임을 만들어 본 적이 없어서 공부도 할겸 이번 기회에 만들어보자! 해서 만들게 되었습니다.
 > 공튀기기를 만들기로하고 간단히 어떤 원리로 공이 부딪히면 튀게 되는지만 확인하고 0부터 직접 코딩 해봅시다!
 
+> 최신) 중간에 블록 생성하고 블록에도 충돌감지를 하도록 하는게 도저히 생각이 나질 않아 직접 코드를 따라치며 연필로 끄적이다보니 
+> Interactive developer님이 만드신 코드가 이해가 갔습니다.. 너무 어렵..
+
 <img src='/assets/images/bounceSuccess.gif' alt='main-image' style="width:600px; margin-top:15px; margin-bottom:15px; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;"/>
 
 ## 1. canvas
