@@ -50,7 +50,7 @@ html {
 body {
     width            : 100%;
     height           : 100%;
-    background-color : #00074f;
+    background-color: darkgray;
     overflow         : hidden;
 }
 
@@ -146,7 +146,7 @@ export class Ball {
     this.x += this.vx;
     this.y += this.vy;
     
-    ctx.fillStyle="#80d9e3";
+    ctx.fillStyle = '#f5f5f5';
   
     this.bounce(stageWidth, stageHeight);
     
@@ -226,11 +226,169 @@ window.onload = () => {
 - `animate()`
   - `this.ctx.clearRect()` : 기존에 그려진 canvas를 지우는 메서드입니다. draw()하기 전에 써줘야 합니다 순서중요!!
 - `this.ball.draw(..)` : 전달인자(argument)로 ctx, stageWidth, stageHeight 주면 끝!!
-- 이제 공튀기는 걸 감상하면 됩니다!
+- 이제 공튀기는 걸 감상하면 됩니다!!!
+
+## 6. 공튀기기 - 중간에 벽돌 추가 해보기
+
+canvas 중간에 벽돌을 생성하여 벽돌에도 충돌시 공을 튕기도록 만들어보자.
+
+### 6.1 block.js
+
+```js
+export class Block {
+  constructor( width, height, x, y ) {
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;
+    this.maxX = this.width + x;
+    this.maxY = this.height + y;
+  }
+  
+  draw(ctx) {
+    
+    const xGap = 30;
+    const yGap = 10;
+    
+    ctx.fillStyle = '#7c7e97';
+    ctx.beginPath();
+    ctx.rect(this.x, this.y, this.width, this.height);
+    ctx.fill();
+
+    ctx.fillStyle = '#190f3a';
+    ctx.beginPath();
+    ctx.moveTo(this.maxX, this.maxY);
+    ctx.lineTo(this.maxX - xGap, this.maxY + yGap);
+    ctx.lineTo(this.x - xGap, this.maxY + yGap);
+    ctx.lineTo(this.x, this.y + yGap);
+    ctx.fill();
+
+    ctx.fillStyle = '#efeff5';
+    ctx.beginPath();
+    ctx.moveTo(this.x - xGap, this.y + yGap + yGap);
+    ctx.lineTo(this.x - xGap, this.y + yGap);
+    ctx.lineTo(this.x, this.y);
+    ctx.lineTo(this.x,this.y + yGap);
+    ctx.fill();
+  }
+}
+```
+- 벽돌의 `width, height`를 받아 크기를 설정하고 벽돌의 생성위치를 정할 `x, y` 값을 받아옵니다.
+- 벽돌의 끝 값을 가져올 `maxX, maxY` 값을 구합니다.
+- `draw(ctx)`
+  - `xGap, yGap` : 벽돌의 그림자를 어느정도로 설정할지 정하는 변수
+  - `moveTo(x,y)` : 라인을 그릴 시작점을 정하고
+  - `lineTo(x,y)` : 라인을 따라 이어 그립니다.
+  - 정면, 아랫면, 옆면 총 3개의 면이 필요합니다. 간단하게 2d 직사각형으로 그리셔도 됩니다.
+  
+### 6.2 app.js
+```js
+import {Ball} from './ball.js'
+import {Block} from './block.js'
+class App {
+  constructor() {
+    this.canvas = document.getElementById('ballBounce')
+    this.ctx = this.canvas.getContext('2d');
+
+    this.stageWidth = document.body.clientWidth;
+    this.stageHeight = document.body.clientHeight;
+
+    this.canvas.width = this.stageWidth;
+    this.canvas.height = this.stageHeight;
+
+    this.ball = new Ball(this.stageWidth,this.stageHeight, 30, 10);
+    this.block = new Block(300,10, 100,300);
+    window.requestAnimationFrame(this.animate)
+  }
+
+  animate = () => {
+    window.requestAnimationFrame(this.animate);
+
+    this.ctx.clearRect(0,0,this.stageWidth, this.stageHeight);
+
+    this.block.draw(this.ctx);
+    this.ball.draw(this.ctx, this.stageWidth,this.stageHeight, this.block);
+  }
+}
+
+window.addEventListener('load', () => {
+  new App();
+});
+```
+
+- export한 Block 객체를 생성하고 `animate()` 함수 안에 `this.block.draw(ctx)` 전달인자(argument)로 `ctx`를 전달해서 벽돌을 canvas에 그립니다.
+- `this.ball.draw(..., this.block)` 함수에 직접 벽에 충돌하는 것을 계산하기 위해 전달인자로 `block`객체를 보냅니다.
+
+### 6.3 ball.js
+```js
+export class Ball {
+  constructor( stageWidth, stageHeight, radius, speed ) {
+		...
+  }
+
+  draw( ctx, stageWidth, stageHeight, block ) {
+	
+    this.x += this.vx;
+    this.y += this.vy;
+
+    ctx.fillStyle = '#f5f5f5';
+
+
+    this.bounce(stageWidth, stageHeight);
+
+    this.bounceBlock(block);
+
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+    ctx.fill();
+  }
+
+  bounce( stageWidth, stageHeight ) {
+  	...
+  }
+
+  bounceBlock( block ) {
+    const minX = block.x - this.radius;
+    const maxX = block.maxX + this.radius;
+    const minY = block.y - this.radius;
+    const maxY = block.maxY + this.radius;
+
+    if (this.x > minX && this.x < maxX && this.y > minY && this.y < maxY) {
+      const x1 = Math.abs(minX - this.x);
+      const x2 = Math.abs(this.x - maxX);
+      const y1 = Math.abs(minY - this.y);
+      const y2 = Math.abs(this.y - maxY);
+      const min1 = Math.min(x1, x2);
+      const min2 = Math.min(y1, y2);
+      const min = Math.min(min1,min2);
+
+      if(min === min1) {
+        this.vx *= -1;
+        this.x += this.vx;
+      } else if(min === min2) {
+        this.vy *= -1;
+        this.y += this.vy;
+      }
+    }
+  }
+}
+```
+
+<span style="color:orange">constructor과 bounce는 변경된 점이 없기 때문에 코드를 생략하겠습니다.</span>
+
+#### 6.3.1 중간 벽돌에 충돌 감지하는 원리
+
+<img src='/assets/images/ballBlock.png' alt='main-image' style="width:600px; margin-top:15px; margin-bottom:15px; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;"/>
+
+- block의 width,height로 x,y,maxX,maxY 값을 가지고 있고, 공의 중심점인 x,y값이 block의 min 보다 크고 max 보다 작으면 충돌했다고 가정합니다
+- 또한 공의 충돌이 벽의 왼쪽인지 오른쪽인지 위인지 아래인지 확인하려면 현재 공의 x,y값을 min값과 max값을 절대값으로 구하고 두 변수를 비교해서 수가 적은 쪽이
+해당 하는 방향에 더 가까운걸로 판단합니다.
+- 마지막으로 `min`은 좌표의 옆면인지 위아래면인지 확인하는 변수입니다. 마찬가지로 결국 block에 가장 근접한 값이 해당 면이 됩니다.
 
 ---
 
 **참고** <br>
 [MDN](https://developer.mozilla.org/ko/docs/Web/HTML/Canvas){:target="\_blank"} <br>
+[interactive developer](https://www.youtube.com/watch?v=sLCiI6d5vTM&t=405s){:target="\_blank"} <br>
 
 
