@@ -138,8 +138,8 @@ export class Ball {
     const diameter = this.radius * 2;
 
     // draw 공의 시작지점 정하는 x,y 값
-    this.x = ( Math.floor(Math.random() * ( stageWidth - ( diameter * 2 ) )) + 100 );
-    this.y = ( Math.floor(Math.random() * ( stageHeight - ( diameter * 2 ) )) + 100 );
+    this.x = ( Math.floor(Math.random() * ( stageWidth - ( diameter * 2 ) )) + diameter );
+    this.y = ( Math.floor(Math.random() * ( stageHeight - ( diameter * 2 ) )) + diameter );
   }
   
   draw(ctx, stageWidth, stageHeight) {
