@@ -2,7 +2,7 @@
 title: 'node.js 콘솔 값 입력 받기'
 excerpt: 'node.js에서 콘솔로 값을 입력 받는것을 알아보겠습니다. 코테용' 
 categories: [JavaScript]
-tags: [node,js 콘솔 입력]
+tags: [node.js, node.js 콘솔 입력]
 last_modified_at: 2021-01-28T01:18:00-19:00
 toc: true 
 toc_label: '목차'
