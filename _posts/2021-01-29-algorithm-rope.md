@@ -103,4 +103,4 @@ function getMaxWeight( k, weightList ) {
 ---
 
 **참고** <br>
-[백준 그리디 알고리즘 11399번](https://www.acmicpc.net/problem/11399){:target="\_blank"} <br>
+[백준 그리디 알고리즘 2217번](https://www.acmicpc.net/problem/2217){:target="\_blank"} <br>
