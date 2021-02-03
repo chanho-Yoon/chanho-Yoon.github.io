@@ -1,5 +1,4 @@
 ---
-layout: post
 title: '퀵 정렬(quick sort)'
 excerpt: 'javascript를 사용해서 퀵정렬을 구현해보겠습니다.' 
 categories: [algorithm]

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: '자기소개 웹 만들기'
 excerpt: '자기소개 웹 반응형으로 만들어봤습니다' 
 categories: [free]

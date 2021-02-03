@@ -1,5 +1,4 @@
 ---
-layout: post
 title: '그리디 알고리즘 ATM'
 excerpt: 'javascript를 사용해서 백준알고리즘 그리디 ATM 문제를 풀겠습니다.' 
 categories: [algorithm]

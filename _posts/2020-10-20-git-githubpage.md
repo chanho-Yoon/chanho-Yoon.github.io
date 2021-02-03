@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Github Page로 웹 호스팅'
 excerpt: '자바스크립트 공부하면서 복습겸 순수 자바스크립트만을 이용하여 To Do List(할 일 목록)를 만들어 보았습니다.'
 categories: [Git]

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Mysql의 구조'
 excerpt: 'Mysql의 구조에 대해 공부하도록 하겠습니다.'
 categories: [Mysql]

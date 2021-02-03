@@ -1,5 +1,4 @@
 ---
-layout: post
 title: '자바스크립트 비동기적 처리'
 excerpt: '자바스크립트 비동기적 처리에 대해 공부하겠습니다.'
 categories: [JavaScript]

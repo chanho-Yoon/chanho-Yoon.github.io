@@ -1,5 +1,4 @@
 ---
-layout: post
 title: '파이썬 함수'
 excerpt: '파이썬 함수에 대해 공부하겠습니다.'
 categories: [Python]

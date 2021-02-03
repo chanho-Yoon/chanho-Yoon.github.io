@@ -1,5 +1,4 @@
 ---
-layout: post
 title: '브라우저 렌더링 과정 및 css animation 최적화'
 excerpt: '브라우저 렌더링 과정과 reflow와 repaint에 대해 알아보겠습니다.'
 categories: [Web]

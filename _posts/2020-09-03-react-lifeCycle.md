@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'React 라이프싸이클'
 excerpt: 'React Life Cycle에 대해 공부하겠습니다.'
 categories: [React]

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'canvas 공튀기기'
 excerpt: 'canvas를 이용한 공튀기기를 만듭니다' 
 categories: [JavaScript]

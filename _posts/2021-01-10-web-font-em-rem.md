@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'em rem 단위'
 excerpt: 'em,rem 단위에 대해 알아보도록 하겠습니다.' 
 categories: [css]

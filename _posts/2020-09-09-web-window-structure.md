@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Browser 구조'
 excerpt: 'Browser 구조에 대해 공부하겠습니다.'
 categories: [Web]

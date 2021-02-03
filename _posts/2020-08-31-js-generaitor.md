@@ -1,5 +1,4 @@
 ---
-layout: post
 title: '제너레이터(Generator)'
 excerpt: '제너레이터(Generator)에 대해 알아보겠습니다.'
 categories: [JavaScript]

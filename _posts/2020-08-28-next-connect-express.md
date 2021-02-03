@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'next, express 연결'
 excerpt: 'next와 express를 연결하는 이유와 방법에 대해 공부해보도록 하겠습니다.'
 categories: [next, express]

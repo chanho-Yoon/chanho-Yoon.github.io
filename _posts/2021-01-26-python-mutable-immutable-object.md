@@ -1,5 +1,4 @@
 ---
-layout: post
 title: '파이썬 가변 객체와 불변 객체'
 excerpt: 'python에서 가변(mutable) 객체와 불변(immutable) 객체에 대해 알아보겠습니다.' 
 categories: [python]

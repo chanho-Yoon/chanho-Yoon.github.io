@@ -1,5 +1,4 @@
 ---
-layout: post
 title: '파이썬의 자료형'
 excerpt: '파이썬의 자료형에 대해서 공부하도록 하겠습니다.'
 categories: [Python]
