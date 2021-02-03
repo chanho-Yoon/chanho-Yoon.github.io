@@ -6,6 +6,9 @@ tags: [em rem, em, rem]
 last_modified_at: 2021-01-10T01:18:00-19:00, 
 toc: true 
 toc_label: '목차'
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 ## 1. em과 rem 단위

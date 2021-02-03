@@ -6,6 +6,9 @@ tags: [React Lifecycle, 리액트 라이프싸이클]
 last_modified_at: 2020-09-03T01:15:00-16:00
 toc: true
 toc_label: '목차'
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 ## 1. React Life Cycle

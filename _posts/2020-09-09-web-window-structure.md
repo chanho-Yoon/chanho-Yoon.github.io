@@ -6,6 +6,9 @@ tags: [Browser structure,브라우저 구조]
 last_modified_at: 2020-09-09T01:15:00-16:00
 toc: true
 toc_label: '목차'
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 ## 1. Browser 구조

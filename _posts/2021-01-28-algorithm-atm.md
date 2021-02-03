@@ -6,6 +6,9 @@ tags: [알고리즘 ATM, 자바스크립트 알고리즘, 그리디 알고리즘
 last_modified_at: 2021-01-28T01:20:00-21:00
 toc: true 
 toc_label: '목차'
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 ## 문제

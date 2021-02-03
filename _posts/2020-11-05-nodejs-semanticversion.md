@@ -6,6 +6,9 @@ tags: [sementic versioning, Node.js]
 last_modified_at: 2020-11-05T01:15:00-16:00
 toc: true
 toc_label: '목차'
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 ## 1. Semantic Versioning (유의적 버전)

@@ -6,6 +6,9 @@ tags: [Generator,제너레이터, 자바스크립트 제너레이터]
 last_modified_at: 2020-08-31T01:19:00-20:00
 toc: true
 toc_label: '목차'
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 ## 1. 제너레이터란?

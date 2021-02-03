@@ -6,6 +6,9 @@ tags: [JavaScript ToDoList, 자바스크립트 할 일 목록 만들기]
 last_modified_at: 2020-09-26T01:15:00-16:00
 toc: true
 toc_label: '목차'
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 ## 1. To Do List

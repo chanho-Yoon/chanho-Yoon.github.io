@@ -6,6 +6,9 @@ tags: [python control statements, 파이썬 제어문]
 last_modified_at: 2020-09-02T01:15:00-16:00
 toc: true
 toc_label: '목차'
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 ## 1.제어문이 필요한 이유?

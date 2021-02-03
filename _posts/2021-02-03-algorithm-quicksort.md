@@ -6,6 +6,9 @@ tags: [퀵정렬, 자바스크립트 퀵정렬]
 last_modified_at: 2021-02-03T01:20:00-21:00 
 toc: true 
 toc_label: '목차'
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 > 백준 그리디 알고리즘 2751번 수정렬하기를 풀어보면서 너무 간단하게 생각하고 반복문을 돌렸더니 "**시간초과**"로 인해 실패로 뜨는 것이었다..

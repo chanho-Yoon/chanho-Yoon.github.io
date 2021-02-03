@@ -6,6 +6,9 @@ tags: [Github Page]
 last_modified_at: 2020-10-20T01:15:00-16:00
 toc: true
 toc_label: '목차'
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 ## 1. 깃허브 페이지로 웹 호스팅 하기
 

@@ -6,6 +6,9 @@ tags: [canvas, canvas 공 튀기기, javascript game]
 last_modified_at: 2021-01-20T01:18:00-19:00
 toc: true 
 toc_label: '목차'
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 > 자바스크립트로 게임을 만들어 본 적이 없어서 공부도 할겸 이번 기회에 만들어보자! 해서 만들게 되었습니다.

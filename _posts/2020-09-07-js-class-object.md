@@ -6,6 +6,9 @@ tags: [Javascript class, Javascript object]
 last_modified_at: 2020-09-07T01:15:00-16:00
 toc: true
 toc_label: '목차'
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 ## 1. 클래스와 오브젝트

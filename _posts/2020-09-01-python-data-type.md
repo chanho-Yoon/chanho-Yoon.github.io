@@ -6,6 +6,9 @@ tags: [python data type,파이썬 자료형, 파이썬 리스트, 파이썬 튜�
 last_modified_at: 2020-09-01T01:15:00-16:00
 toc: true
 toc_label: '목차'
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 ## 1. 파이썬의 자료형
