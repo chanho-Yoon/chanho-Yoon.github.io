@@ -42,27 +42,27 @@ N(1 ≤ N ≤ 100,000)개의 로프가 있다. 이 로프를 이용하여 이런
 ## 풀이
 
 - **문제의 핵심**
-	- 최대중량을 구하는데 단 하나의 로프라도 끊어지면 안됨.
-	- 단 모든 로프를 사용해야 할 필요가 없음.
-	- 임의로 몇 개의 로프를 골라서 사용해도 된다.
-	- 병렬로 연결하여 k개의 로프를 사용해서 중량이 w인 물체를 들어올릴 때, 각각의 로프에는 w/k만큼의 중량이 걸리게 된다.
-	
-	
+  - 최대중량을 구하는데 단 하나의 로프라도 끊어지면 안됨.
+  - 단 모든 로프를 사용해야 할 필요가 없음.
+  - 임의로 몇 개의 로프를 골라서 사용해도 된다.
+  - 병렬로 연결하여 k개의 로프를 사용해서 중량이 w인 물체를 들어올릴 때, 각각의 로프에는 w/k만큼의 중량이 걸리게 된다.
+  
+  
 - **코딩 접근 방식**
   - 리스트를 내림차순으로 정렬한다.
   - 간단하게 최대로 버틸 수 있는 로프 중량을 먼저 구한다. (로프 1개)
   - 예를 들어 0번째 로프 중량이 20이라면 1번째 로프 중량은 내림차순 정렬 했기 때문에
-	`list[0] >= list[1] >= list[n]..` 이다. <br> list[1] * 2(로프2개)를 해도 무게는 w/k만큼 분산 되기 때문에 결국은
-	  list[0] >= (list[1] * 2)/2 이기 때문에 로프가 끊어질 일은 없다. (로프 2개)
-	
+  `list[0] >= list[1] >= list[n]..` 이다. <br> list[1] * 2(로프2개)를 해도 무게는 w/k만큼 분산 되기 때문에 결국은
+    list[0] >= (list[1] * 2)/2 이기 때문에 로프가 끊어질 일은 없다. (로프 2개)
+  
 
 ### 코딩
 
 ```js
 const readline = require('readline');
 const rl = readline.createInterface({
-	input : process.stdin,
-	output: process.stdout
+  input : process.stdin,
+  output: process.stdout
 })
 
 // 로프 k
@@ -76,26 +76,26 @@ let max = 0;
 let count = 0;
 
 rl.on('line', ( line ) => {
-	if (count === 0) {
-		k = parseInt(line.trim())
-	} else {
-		weightList.push(parseInt(line.trim()))
-	}
-	if (count === k) {
-		rl.close();
-		getMaxWeight(k, weightList);
-	}
-	count++;
+  if (count === 0) {
+    k = parseInt(line.trim())
+  } else {
+    weightList.push(parseInt(line.trim()))
+  }
+  if (count === k) {
+    rl.close();
+    getMaxWeight(k, weightList);
+  }
+  count++;
 })
 
 function getMaxWeight( k, weightList ) {
-	weightList.sort(( a, b ) => b - a); // 내림차순 정렬
-	for (let i = 1; i <= k; i++) {  // i 는 사용한 로프 갯수
-		if(weightList[i-1] > max) {
-			max = weightList[i-1] * i;
-		}
-	}
-	console.log(max);
+  weightList.sort(( a, b ) => b - a); // 내림차순 정렬
+  for (let i = 1; i <= k; i++) {  // i 는 사용한 로프 갯수
+    if(weightList[i-1] > max) {
+      max = weightList[i-1] * i;
+    }
+  }
+  console.log(max);
 }
 
 ```
