@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 'React 라이프싸이클'
 excerpt: 'React Life Cycle에 대해 공부하겠습니다.'
 categories: [React]
@@ -7,8 +8,8 @@ last_modified_at: 2020-09-03T01:15:00-16:00
 toc: true
 toc_label: '목차'
 sitemap :
-  changefreq : daily
-  priority : 1.0
+changefreq : daily
+priority : 1.0
 ---
 
 ## 1. React Life Cycle

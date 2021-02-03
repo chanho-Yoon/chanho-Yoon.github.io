@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 'node.js 콘솔 값 입력 받기'
 excerpt: 'node.js에서 콘솔로 값을 입력 받는것을 알아보겠습니다. 코테용' 
 categories: [JavaScript]
@@ -7,8 +8,8 @@ last_modified_at: 2021-01-28T01:18:00-19:00
 toc: true 
 toc_label: '목차'
 sitemap :
-  changefreq : daily
-  priority : 1.0
+changefreq : daily
+priority : 1.0
 ---
 
 > python으로 알고리즘 공부하는 중 프론트엔드는 javascript로 코딩테스트를 많이 본다고해서 js로 시작하는데

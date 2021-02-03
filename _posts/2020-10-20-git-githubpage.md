@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 'Github Page로 웹 호스팅'
 excerpt: '자바스크립트 공부하면서 복습겸 순수 자바스크립트만을 이용하여 To Do List(할 일 목록)를 만들어 보았습니다.'
 categories: [Git]
@@ -7,8 +8,8 @@ last_modified_at: 2020-10-20T01:15:00-16:00
 toc: true
 toc_label: '목차'
 sitemap :
-  changefreq : daily
-  priority : 1.0
+changefreq : daily
+priority : 1.0
 ---
 ## 1. 깃허브 페이지로 웹 호스팅 하기
 

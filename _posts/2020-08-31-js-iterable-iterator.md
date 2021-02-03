@@ -1,4 +1,5 @@
 ---
+layout: post
 title: '이터러블 프로토콜, 이터러블 / 이터레이터'
 excerpt: '이터러블(iterable) 과 이터레이터(iterator)가 무엇인지 알아보도록 하겠습니다.'
 categories: [JavaScript]
@@ -7,8 +8,8 @@ last_modified_at: 2020-08-31T01:17:00-18:00
 toc: true
 toc_label: '목차'
 sitemap :
-  changefreq : daily
-  priority : 1.0
+changefreq : daily
+priority : 1.0
 ---
 
 ## 1. 이터러블이란

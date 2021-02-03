@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 'next, express 연결'
 excerpt: 'next와 express를 연결하는 이유와 방법에 대해 공부해보도록 하겠습니다.'
 categories: [next, express]
@@ -7,8 +8,8 @@ last_modified_at: 2020-08-28T01:17:00-18:00
 toc: true
 toc_label: '목차'
 sitemap :
-  changefreq : daily
-  priority : 1.0
+changefreq : daily
+priority : 1.0
 ---
 
 <br>

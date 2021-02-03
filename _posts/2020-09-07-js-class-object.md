@@ -1,4 +1,5 @@
 ---
+layout: post
 title: '객체지향 자바스크립트에서 클래스와 오브젝트 차이'
 excerpt: '객체지향 자바스크립트에서 클래스와 오브젝트 차이에 대해 공부하겠습니다.'
 categories: [JavaScript]
@@ -7,8 +8,8 @@ last_modified_at: 2020-09-07T01:15:00-16:00
 toc: true
 toc_label: '목차'
 sitemap :
-  changefreq : daily
-  priority : 1.0
+changefreq : daily
+priority : 1.0
 ---
 
 ## 1. 클래스와 오브젝트

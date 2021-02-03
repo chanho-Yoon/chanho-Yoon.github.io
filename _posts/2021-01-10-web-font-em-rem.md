@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 'em rem 단위'
 excerpt: 'em,rem 단위에 대해 알아보도록 하겠습니다.' 
 categories: [css]
@@ -7,8 +8,8 @@ last_modified_at: 2021-01-10T01:18:00-19:00,
 toc: true 
 toc_label: '목차'
 sitemap :
-  changefreq : daily
-  priority : 1.0
+changefreq : daily
+priority : 1.0
 ---
 
 ## 1. em과 rem 단위

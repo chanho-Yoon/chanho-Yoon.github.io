@@ -1,4 +1,5 @@
 ---
+layout: post
 title: '자바스크립트 비동기적 처리'
 excerpt: '자바스크립트 비동기적 처리에 대해 공부하겠습니다.'
 categories: [JavaScript]
@@ -7,8 +8,8 @@ last_modified_at: 2020-09-04T01:15:00-16:00
 toc: true
 toc_label: '목차'
 sitemap :
-  changefreq : daily
-  priority : 1.0
+changefreq : daily
+priority : 1.0
 ---
 
 ## 1. 동기(synchronous) vs 비동기(asynchronous)

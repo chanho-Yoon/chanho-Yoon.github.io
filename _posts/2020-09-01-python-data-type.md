@@ -1,4 +1,5 @@
 ---
+layout: post
 title: '파이썬의 자료형'
 excerpt: '파이썬의 자료형에 대해서 공부하도록 하겠습니다.'
 categories: [Python]
@@ -7,8 +8,8 @@ last_modified_at: 2020-09-01T01:15:00-16:00
 toc: true
 toc_label: '목차'
 sitemap :
-  changefreq : daily
-  priority : 1.0
+changefreq : daily
+priority : 1.0
 ---
 
 ## 1. 파이썬의 자료형

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: '그리디 알고리즘 ATM'
 excerpt: 'javascript를 사용해서 백준알고리즘 그리디 ATM 문제를 풀겠습니다.' 
 categories: [algorithm]
@@ -7,8 +8,8 @@ last_modified_at: 2021-01-28T01:20:00-21:00
 toc: true 
 toc_label: '목차'
 sitemap :
-  changefreq : daily
-  priority : 1.0
+changefreq : daily
+priority : 1.0
 ---
 
 ## 문제

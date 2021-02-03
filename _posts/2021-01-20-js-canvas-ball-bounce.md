@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 'canvas 공튀기기'
 excerpt: 'canvas를 이용한 공튀기기를 만듭니다' 
 categories: [JavaScript]
@@ -7,8 +8,8 @@ last_modified_at: 2021-01-20T01:18:00-19:00
 toc: true 
 toc_label: '목차'
 sitemap :
-  changefreq : daily
-  priority : 1.0
+changefreq : daily
+priority : 1.0
 ---
 
 > 자바스크립트로 게임을 만들어 본 적이 없어서 공부도 할겸 이번 기회에 만들어보자! 해서 만들게 되었습니다.
@@ -329,11 +330,11 @@ window.addEventListener('load', () => {
 ```js
 export class Ball {
   constructor( stageWidth, stageHeight, radius, speed ) {
-		...
+    ...
   }
 
   draw( ctx, stageWidth, stageHeight, block ) {
-	
+  
     this.x += this.vx;
     this.y += this.vy;
 
@@ -350,7 +351,7 @@ export class Ball {
   }
 
   bounce( stageWidth, stageHeight ) {
-  	...
+    ...
   }
 
   bounceBlock( block ) {
