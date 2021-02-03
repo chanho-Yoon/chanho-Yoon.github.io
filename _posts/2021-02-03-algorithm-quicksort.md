@@ -10,7 +10,7 @@ toc_label: '목차'
 
 > 백준 그리디 알고리즘 2751번 수정렬하기를 풀어보면서 너무 간단하게 생각하고 반복문을 돌렸더니 "**시간초과**"로 인해 실패로 뜨는 것이었다..
 > 알고보니 **퀵정렬**을 사용해서 풀어야했던 것.. 그래서 퀵정렬에 대해 정보처리기사 시험 공부할 때 기억을 되새기며 다시 복습차원에서
-> 구현해보도록 하겠습니다. 
+> 구현해보도록 하겠습니다.
 >> 머리로는 이해 되는데 코딩으로는 안짜져서 이해하는데 솔직히 이틀정도 걸린 것 같습니다.. 간단하게 sort()함수를 사용하면 될테지만 직접 구현해보는 맛도 있으니까요!!😂
 
 ## 퀵정렬
@@ -103,21 +103,21 @@ function swap( arr, left, right ) {
 
 ## 설명
 
+<img src='/assets/images/quick.png' alt='profile' style="width:700px; margin-top:15px; margin-bottom:15px; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;"/>
+
 - **pivot** 을 기준으로 pivot보다 작은 값, 큰 값으로 분할하고, 분할된 각각의 작은 값, 큰 값으로 나누어진 부분배열을 정렬합니다.
 - 여기서 분할된 부분은 재귀호출을 사용합니다.
-  - pivot 보다 작은 값 재귀호출
-  - pivot 보다 큰 값 재귀호출
-  - 재귀함수의 종료시점은 left가 right보다 커졌을 경우 return; ( 더이상 정렬할게 없다. )
+	- pivot 보다 작은 값 재귀호출
+	- pivot 보다 큰 값 재귀호출
+	- 재귀함수의 종료시점은 left가 right보다 커졌을 경우 return; ( 더이상 정렬할게 없다. )
 - **pivot** 을 기준으로
-  - left 값이 pivot보다 작으면 다음으로 넘어갑니다.
-  - left 값이 pivot보다 크면 가만히 있습니다.
-  - right 값이 pivot보다 크면 다음으로 넘어갑니다.
-  - right 값이 pivot보다 작으면 가만히 있습니다.
-  - 더이상 arr[left] < pivot && pivot < arr[right] 반복문이 동작하지 않고 `left < right` 조건문이 적합하다면 자리를 **swap** 합니다.
-  - 마지막으로 left 와 right가 교차하거나 같아진다면 left와 pivotIndex를 **swap** 합니다.
-  - 새로운 pivotIndex(left)를 반환합니다.
-  
-<img src='/assets/images/quick.png' alt='profile' style="width:700px; margin-top:15px; margin-bottom:15px; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;"/>
+	- left 값이 pivot보다 작으면 다음으로 넘어갑니다.
+	- left 값이 pivot보다 크면 가만히 있습니다.
+	- right 값이 pivot보다 크면 다음으로 넘어갑니다.
+	- right 값이 pivot보다 작으면 가만히 있습니다.
+	- 더이상 arr[left] < pivot && pivot < arr[right] 반복문이 동작하지 않고 `left < right` 조건문이 적합하다면 자리를 **swap** 합니다.
+	- 마지막으로 left 와 right가 교차하거나 같아진다면 left와 pivotIndex를 **swap** 합니다.
+	- 새로운 pivotIndex(left)를 반환합니다.
 
 ---
 
