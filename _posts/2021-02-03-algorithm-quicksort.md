@@ -26,8 +26,8 @@ toc_label: '목차'
 ```js
 const readline = require('readline');
 const rl = readline.createInterface({
-	input : process.stdin,
-	output: process.stdout
+  input : process.stdin,
+  output: process.stdout
 });
 
 let count = 0;
@@ -35,69 +35,69 @@ let n = 0;
 let arr = [];
 // 입력부분 -------------------------------------------
 rl.on('line', ( input ) => {
-	if (count === 0)
-		n = parseInt(input.trim());
-	else
-		arr.push(parseInt(input.trim()));
-	if (count === n) {
-		rl.close();
-		quickSort(arr);
-		console.log(arr);
-	}
-	count++;
+  if (count === 0)
+    n = parseInt(input.trim());
+  else
+    arr.push(parseInt(input.trim()));
+  if (count === n) {
+    rl.close();
+    quickSort(arr);
+    console.log(arr);
+  }
+  count++;
 });
 // 입력부분 끝 -------------------------------------------
 // 퀵정렬 재귀함수
 function quickSort( arr, left, right ) {
-	if (!left) left = 0;
-	if (!right) right = arr.length - 1;
-	let pivotIndex = right;
+  if (!left) left = 0;
+  if (!right) right = arr.length - 1;
+  let pivotIndex = right;
 
-	// pivotIndex 반환
-	pivotIndex = partition(arr, left, right - 1, pivotIndex);
+  // pivotIndex 반환
+  pivotIndex = partition(arr, left, right - 1, pivotIndex);
 
-	// pivot 보다 작은 배열 정렬
-	if (left < pivotIndex - 1)
-		quickSort(arr, left, pivotIndex - 1);
-	// pivot 보다 큰 배열 정렬
-	if (pivotIndex + 1 < right)
-		quickSort(arr, pivotIndex + 1, right);
+  // pivot 보다 작은 배열 정렬
+  if (left < pivotIndex - 1)
+    quickSort(arr, left, pivotIndex - 1);
+  // pivot 보다 큰 배열 정렬
+  if (pivotIndex + 1 < right)
+    quickSort(arr, pivotIndex + 1, right);
 
-	return arr;
+  return arr;
 }
 
 // 정렬 및 pivotIndex를 반환할 함수
 function partition( arr, left, right, pivotIndex ) {
-	// pivot value 값
-	let pivot = arr[pivotIndex];
+  // pivot value 값
+  let pivot = arr[pivotIndex];
 
-	// left와 right가 교차할 때 까지 반복
-	while (left <= right) {
-		// pivot 보다 작을경우 다음으로 넘어감
-		// ( 만약 arr[left]가 pivot보다 클 경우 가만히 있고 pivot < arr[right] 로 넘어감 )
-		while (arr[left] < pivot)
-			left++;
-		// pivot 보다 클 경우 다음으로 넘어감
-		// ( 만약 arr[left]가 pivot보다 작을 경우 가만히 있고 if(left <right)로 넘어가서 swap함 )
-		while (pivot < arr[right])
-			right--;
+  // left와 right가 교차할 때 까지 반복
+  while (left <= right) {
+    // pivot 보다 작을경우 다음으로 넘어감
+    // ( 만약 arr[left]가 pivot보다 클 경우 가만히 있고 pivot < arr[right] 로 넘어감 )
+    while (arr[left] < pivot)
+      left++;
+    // pivot 보다 클 경우 다음으로 넘어감
+    // ( 만약 arr[left]가 pivot보다 작을 경우 가만히 있고 if(left <right)로 넘어가서 swap함 )
+    while (pivot < arr[right])
+      right--;
 
-		// 더이상 left와 right가 이동하지 않을 경우 서로를 swap 후 left++, right--
-		if (left < right) {
-			swap(arr, left, right);
-			left++;
-			right--;
-		}
-	}
-	// left와 right가 교차하거나 같아진다면 left와 pivotIndex를 swap 후 left를 반환
-	swap(arr, left, pivotIndex);
-	return left;
+    // 더이상 left와 right가 이동하지 않을 경우 서로를 swap 후 left++, right--
+    if (left < right) {
+      swap(arr, left, right);
+      left++;
+      right--;
+    }
+  }
+  // left와 right가 교차하거나 같아진다면 left와 pivotIndex를 swap 후 left를 반환
+  swap(arr, left, pivotIndex);
+  return left;
 }
 
 function swap( arr, left, right ) {
-	let tmp = arr[left];
-	arr[left] = arr[right];
-	arr[right] = tmp;
+  let tmp = arr[left];
+  arr[left] = arr[right];
+  arr[right] = tmp;
 }
 ```
 
@@ -107,17 +107,17 @@ function swap( arr, left, right ) {
 
 - **pivot** 을 기준으로 pivot보다 작은 값, 큰 값으로 분할하고, 분할된 각각의 작은 값, 큰 값으로 나누어진 부분배열을 정렬합니다.
 - 여기서 분할된 부분은 재귀호출을 사용합니다.
-	- pivot 보다 작은 값 재귀호출
-	- pivot 보다 큰 값 재귀호출
-	- 재귀함수의 종료시점은 left가 right보다 커졌을 경우 return; ( 더이상 정렬할게 없다. )
+  - pivot 보다 작은 값 재귀호출
+  - pivot 보다 큰 값 재귀호출
+  - 재귀함수의 종료시점은 left가 right보다 커졌을 경우 return; ( 더이상 정렬할게 없다. )
 - **pivot** 을 기준으로
-	- left 값이 pivot보다 작으면 다음으로 넘어갑니다.
-	- left 값이 pivot보다 크면 가만히 있습니다.
-	- right 값이 pivot보다 크면 다음으로 넘어갑니다.
-	- right 값이 pivot보다 작으면 가만히 있습니다.
-	- 더이상 arr[left] < pivot && pivot < arr[right] 반복문이 동작하지 않고 `left < right` 조건문이 적합하다면 자리를 **swap** 합니다.
-	- 마지막으로 left 와 right가 교차하거나 같아진다면 left와 pivotIndex를 **swap** 합니다.
-	- 새로운 pivotIndex(left)를 반환합니다.
+  - left 값이 pivot보다 작으면 다음으로 넘어갑니다.
+  - left 값이 pivot보다 크면 가만히 있습니다.
+  - right 값이 pivot보다 크면 다음으로 넘어갑니다.
+  - right 값이 pivot보다 작으면 가만히 있습니다.
+  - 더이상 arr[left] < pivot && pivot < arr[right] 반복문이 동작하지 않고 `left < right` 조건문이 적합하다면 자리를 **swap** 합니다.
+  - 마지막으로 left 와 right가 교차하거나 같아진다면 left와 pivotIndex를 **swap** 합니다.
+  - 새로운 pivotIndex(left)를 반환합니다.
 
 ---
 
