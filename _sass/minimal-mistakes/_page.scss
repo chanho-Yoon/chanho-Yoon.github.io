@@ -112,7 +112,10 @@ body {
       opacity: 1;
     }
   }
-
+  p img {
+	display: block;
+	margin: 0px auto;
+  }
   p,
   li,
   dl {
