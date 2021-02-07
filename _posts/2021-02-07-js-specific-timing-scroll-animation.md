@@ -15,7 +15,7 @@ priority : 1.0
 
 ## 섹션 내에서의 opacity 값 비율 구하기 
 
-<img src='/assets/images/allScrollSection.png' alt='profile' style="width:700px; margin-top:15px; margin-bottom:15px; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;"/>
+<img src='/assets/images/allScrollSection.png' alt='profile' style="width:900px; margin-top:15px; margin-bottom:15px; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;"/>
 
 
 만약 위와 같이 4개의 섹션이 존재하고, **section 2**에서 스크롤 위치 값을 이용해서 opacity 값을 구하는데 <br>
@@ -25,7 +25,7 @@ priority : 1.0
 
 범위가 0~1인 `opacity` 값을 섹션의 높이와 스크롤 위치를 이용해서 구하는 방법 입니다.
 
-<img src='/assets/images/scrollSectionTwo.png' alt='profile' style="width:700px; margin-top:15px; margin-bottom:15px; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;"/>
+<img src='/assets/images/scrollSectionTwo.png' alt='profile' style="width:900px; margin-top:15px; margin-bottom:15px; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;"/>
 
 위의 그림은 **section 2**를 확대한 것으로 4개의 부분으로 나누어 애니매이션을 수행하도록 합니다.
 
