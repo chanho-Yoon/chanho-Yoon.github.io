@@ -31,7 +31,7 @@ priority : 1.0
 
 **section 2**에서 스크롤 값에 따라 `opacity` 값을 조절하여 html 요소를 나타나게 하거나 사라지게 할려면 opacity 값은 0 ~ 1 값으로 나와야 합니다.<br>
 
-- 그림에서 <span style="color:purple">0</span>과 <span style="color:purple">1</span>은 `opacity`의 값 범위입니다.
+- 그림에서 <span style="color:purple">**0**</span>과 <span style="color:purple">**1**</span>은 `opacity`의 값 범위입니다.
 
 - partScrollStart : 이 지점부터 opacity값이 0에서부터 증가합니다. 
   ```js
