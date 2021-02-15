@@ -2,13 +2,20 @@
    TABLES
    ========================================================================== */
 
+    //border-collapse: collapse;
+    //margin: 25px 0;
+
+
 table {
-  display: block;
+  //display: block;
+  max-width: 500px;
   margin-bottom: 1em;
   width: 100%;
   font-family: $global-font-family;
-  font-size: $type-size-6;
+  //font-size: $type-size-6;
+  font-size: 12px;
   border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   overflow-x: auto;
 
   & + table {
@@ -22,8 +29,12 @@ table {
 }
 
 thead {
-  background-color: $border-color;
-  border-bottom: 2px solid mix(#000, $border-color, 25%);
+  //background-color: $border-color;
+  background-color: #0092ca;
+  border-bottom: 2px solid mix(#3b3b3b, #0092ca, 25%);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 th {
