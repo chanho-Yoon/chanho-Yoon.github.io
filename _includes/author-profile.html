@@ -5,26 +5,26 @@
   {% if author.avatar %}
   <div class="author__avatar">
     {% if author.home %}
-    <a href="{{ author.home | relative_url }}">
-      <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image" />
+    <a target="_blank" href="{{ author.home | relative_url }}">
+      <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image"/>
     </a>
     {% else %}
-    <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image" />
+    <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image"/>
     {% endif %}
   </div>
   {% endif %}
 
   <div class="author__content">
     {% if author.home %}
-    <a href="{{ author.home | relative_url }}"
-      ><h3 class="author__name" itemprop="name">{{ author.name }}</h3></a
+    <a target="_blank" href="{{ author.home | relative_url }}"
+    ><h3 class="author__name" itemprop="name">{{ author.name }}</h3></a
     >
     {% else %}
     <h3 class="author__name" itemprop="name">{{ author.name }}</h3>
     {% endif %} {% if author.bio %}
     <div class="author__bio" itemprop="description">
       {{ author.bio | markdownify }}
-      <br />
+      <br/>
       <p style="max-width: 170px">
         잘못되거나 수정이 필요한 정보는 언제든 댓글 남겨주시면 감사하겠습니다.
       </p>
@@ -45,34 +45,34 @@
       {% endif %} {% if author.links %} {% for link in author.links %} {% if link.label and link.url
       %}
       <li>
-        <a href="{{ link.url }}" rel="nofollow noopener noreferrer"
-          ><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i
-          ><span class="label">{{ link.label }}</span></a
+        <a target="_blank" href="{{ link.url }}" rel="nofollow noopener noreferrer"
+        ><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i
+        ><span class="label">{{ link.label }}</span></a
         >
       </li>
       {% endif %} {% endfor %} {% endif %} {% if author.uri %}
       <li>
-        <a href="{{ author.uri }}" itemprop="url">
+        <a target="_blank" href="{{ author.uri }}" itemprop="url">
           <i class="fas fa-fw fa-link" aria-hidden="true"></i
           ><span class="label"
-            >{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</span
-          >
+        >{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</span
+        >
         </a>
       </li>
       {% endif %} {% if author.email %}
       <li>
-        <a href="mailto:{{ author.email }}">
-          <meta itemprop="email" content="{{ author.email }}" />
+        <a target="_blank" href="mailto:{{ author.email }}">
+          <meta itemprop="email" content="{{ author.email }}"/>
           <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i
           ><span class="label"
-            >{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</span
-          >
+        >{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</span
+        >
         </a>
       </li>
       {% endif %} {% if author.keybase %}
       <li>
         <a
-          href="https://keybase.io/{{ author.keybase }}"
+          target="_blank" href="https://keybase.io/{{ author.keybase }}"
           itemprop="sameAs"
           rel="nofollow noopener noreferrer"
         >
@@ -82,7 +82,7 @@
       {% endif %} {% if author.twitter %}
       <li>
         <a
-          href="https://twitter.com/{{ author.twitter }}"
+          target="_blank" href="https://twitter.com/{{ author.twitter }}"
           itemprop="sameAs"
           rel="nofollow noopener noreferrer"
         >
@@ -93,7 +93,7 @@
       {% endif %} {% if author.facebook %}
       <li>
         <a
-          href="https://www.facebook.com/{{ author.facebook }}"
+          target="_blank" href="https://www.facebook.com/{{ author.facebook }}"
           itemprop="sameAs"
           rel="nofollow noopener noreferrer"
         >
@@ -104,7 +104,7 @@
       {% endif %} {% if author.linkedin %}
       <li>
         <a
-          href="https://www.linkedin.com/in/{{ author.linkedin }}"
+          target="_blank" href="https://www.linkedin.com/in/{{ author.linkedin }}"
           itemprop="sameAs"
           rel="nofollow noopener noreferrer"
         >
@@ -115,7 +115,7 @@
       {% endif %} {% if author.xing %}
       <li>
         <a
-          href="https://www.xing.com/profile/{{ author.xing }}"
+          target="_blank" href="https://www.xing.com/profile/{{ author.xing }}"
           itemprop="sameAs"
           rel="nofollow noopener noreferrer"
         >
@@ -125,7 +125,7 @@
       {% endif %} {% if author.instagram %}
       <li>
         <a
-          href="https://instagram.com/{{ author.instagram }}"
+          target="_blank" href="https://instagram.com/{{ author.instagram }}"
           itemprop="sameAs"
           rel="nofollow noopener noreferrer"
         >
@@ -136,7 +136,7 @@
       {% endif %} {% if author.tumblr %}
       <li>
         <a
-          href="https://{{ author.tumblr }}.tumblr.com"
+          target="_blank" href="https://{{ author.tumblr }}.tumblr.com"
           itemprop="sameAs"
           rel="nofollow noopener noreferrer"
         >
@@ -147,7 +147,7 @@
       {% endif %} {% if author.bitbucket %}
       <li>
         <a
-          href="https://bitbucket.org/{{ author.bitbucket }}"
+          target="_blank" href="https://bitbucket.org/{{ author.bitbucket }}"
           itemprop="sameAs"
           rel="nofollow noopener noreferrer"
         >
@@ -158,7 +158,7 @@
       {% endif %} {% if author.github %}
       <li>
         <a
-          href="https://github.com/{{ author.github }}"
+          target="_blank" href="https://github.com/{{ author.github }}"
           itemprop="sameAs"
           rel="nofollow noopener noreferrer"
         >
@@ -168,7 +168,7 @@
       {% endif %} {% if author.gitlab %}
       <li>
         <a
-          href="https://gitlab.com/{{ author.gitlab }}"
+          target="_blank" href="https://gitlab.com/{{ author.gitlab }}"
           itemprop="sameAs"
           rel="nofollow noopener noreferrer"
         >
@@ -178,7 +178,7 @@
       {% endif %} {% if author.stackoverflow %}
       <li>
         <a
-          href="https://stackoverflow.com/users/{{ author.stackoverflow }}"
+          target="_blank" href="https://stackoverflow.com/users/{{ author.stackoverflow }}"
           itemprop="sameAs"
           rel="nofollow noopener noreferrer"
         >
@@ -189,7 +189,7 @@
       {% endif %} {% if author.lastfm %}
       <li>
         <a
-          href="https://last.fm/user/{{ author.lastfm }}"
+          target="_blank" href="https://last.fm/user/{{ author.lastfm }}"
           itemprop="sameAs"
           rel="nofollow noopener noreferrer"
         >
@@ -200,7 +200,7 @@
       {% endif %} {% if author.dribbble %}
       <li>
         <a
-          href="https://dribbble.com/{{ author.dribbble }}"
+          target="_blank" href="https://dribbble.com/{{ author.dribbble }}"
           itemprop="sameAs"
           rel="nofollow noopener noreferrer"
         >
@@ -211,7 +211,7 @@
       {% endif %} {% if author.pinterest %}
       <li>
         <a
-          href="https://www.pinterest.com/{{ author.pinterest }}"
+          target="_blank" href="https://www.pinterest.com/{{ author.pinterest }}"
           itemprop="sameAs"
           rel="nofollow noopener noreferrer"
         >
@@ -222,7 +222,7 @@
       {% endif %} {% if author.foursquare %}
       <li>
         <a
-          href="https://foursquare.com/{{ author.foursquare }}"
+          target="_blank" href="https://foursquare.com/{{ author.foursquare }}"
           itemprop="sameAs"
           rel="nofollow noopener noreferrer"
         >
@@ -233,7 +233,7 @@
       {% endif %} {% if author.steam %}
       <li>
         <a
-          href="https://steamcommunity.com/id/{{ author.steam }}"
+          target="_blank" href="https://steamcommunity.com/id/{{ author.steam }}"
           itemprop="sameAs"
           rel="nofollow noopener noreferrer"
         >
@@ -242,14 +242,14 @@
       </li>
       {% endif %} {% if author.youtube %} {% if author.youtube contains "://" %}
       <li>
-        <a href="{{ author.youtube }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+        <a target="_blank" href="{{ author.youtube }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
           <i class="fab fa-fw fa-youtube" aria-hidden="true"></i><span class="label">YouTube</span>
         </a>
       </li>
       {% elsif author.youtube %}
       <li>
         <a
-          href="https://www.youtube.com/user/{{ author.youtube }}"
+          target="_blank" href="https://www.youtube.com/user/{{ author.youtube }}"
           itemprop="sameAs"
           rel="nofollow noopener noreferrer"
         >
@@ -259,7 +259,7 @@
       {% endif %} {% endif %} {% if author.soundcloud %}
       <li>
         <a
-          href="https://soundcloud.com/{{ author.soundcloud }}"
+          target="_blank" href="https://soundcloud.com/{{ author.soundcloud }}"
           itemprop="sameAs"
           rel="nofollow noopener noreferrer"
         >
@@ -270,7 +270,7 @@
       {% endif %} {% if author.weibo %}
       <li>
         <a
-          href="https://www.weibo.com/{{ author.weibo }}"
+          target="_blank" href="https://www.weibo.com/{{ author.weibo }}"
           itemprop="sameAs"
           rel="nofollow noopener noreferrer"
         >
@@ -280,7 +280,7 @@
       {% endif %} {% if author.flickr %}
       <li>
         <a
-          href="https://www.flickr.com/{{ author.flickr }}"
+          target="_blank" href="https://www.flickr.com/{{ author.flickr }}"
           itemprop="sameAs"
           rel="nofollow noopener noreferrer"
         >
@@ -290,7 +290,7 @@
       {% endif %} {% if author.codepen %}
       <li>
         <a
-          href="https://codepen.io/{{ author.codepen }}"
+          target="_blank" href="https://codepen.io/{{ author.codepen }}"
           itemprop="sameAs"
           rel="nofollow noopener noreferrer"
         >
@@ -300,14 +300,14 @@
       {% endif %} {% if author.vine %}
       <li>
         <a
-          href="https://vine.co/u/{{ author.vine }}"
+          target="_blank" href="https://vine.co/u/{{ author.vine }}"
           itemprop="sameAs"
           rel="nofollow noopener noreferrer"
         >
           <i class="fab fa-fw fa-vine" aria-hidden="true"></i
           ><span class="label"
-            >{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</span
-          >
+        >{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</span
+        >
         </a>
       </li>
       {% endif %} {% include author-profile-custom-links.html %}

@@ -101,9 +101,12 @@ author:
     - label: 'Email'
       icon: 'fas fa-fw fa-envelope-square'
       # url: "mailto:your.name@email.com"
-    - label: 'Website'
-      icon: 'fas fa-fw fa-link'
-      url: 'https://studyingych.tistory.com/'
+    - label: 'Introduction'
+      icon: 'fas fa-user'
+      url: 'https://www.notion.so/4d6f5c7ffd9d457bb577b99509695c5b'
+    - label: 'Velog'
+      icon: 'fab fa-blogger'
+      url: 'https://velog.io/@chyoon0512'
     - label: 'Twitter'
       icon: 'fab fa-fw fa-twitter-square'
       # url: "https://twitter.com/"
@@ -115,7 +118,7 @@ author:
       url: 'https://github.com/chanho-Yoon'
     - label: 'Instagram'
       icon: 'fab fa-fw fa-instagram'
-      url: 'https://www.instagram.com/chanho___/?hl=ko'
+#      url: 'https://www.instagram.com/chanho___/?hl=ko'
 
 # Site Footer
 footer:
