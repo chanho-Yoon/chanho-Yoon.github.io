@@ -505,7 +505,9 @@
   border-radius: $border-radius;
   -webkit-box-shadow: $box-shadow;
   box-shadow: $box-shadow;
-
+  header {
+    margin-bottom : 0;
+  }
   .nav__title {
     color: #fff;
     font-size: $type-size-6;

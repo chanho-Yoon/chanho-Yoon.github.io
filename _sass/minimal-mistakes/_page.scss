@@ -54,9 +54,7 @@ body {
     margin-right: 0;
     width: 100%;
     clear: both;
-    header {
-      margin-bottom: 35px;
-    }
+
     .page__content,
     .page__meta,
     .page__share {
@@ -66,6 +64,10 @@ body {
       margin-right: 0;
       width: 100%;
       clear: both;
+    }
+
+    .page__date {
+      margin-bottom: 20px;
     }
   }
 }
