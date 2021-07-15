@@ -180,7 +180,16 @@
     margin-bottom : 20px;
   }
 }
-
+.author__tech {
+  p {
+    display: inline;
+    padding: 2.5px 5px;
+    margin: 2.5px;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    color: #e36a00;
+  }
+}
 .author__urls-wrapper {
   position       : relative;
   display        : table-cell;

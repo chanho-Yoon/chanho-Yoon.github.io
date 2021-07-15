@@ -54,7 +54,9 @@ body {
     margin-right: 0;
     width: 100%;
     clear: both;
-
+    header {
+      margin-bottom: 35px;
+    }
     .page__content,
     .page__meta,
     .page__share {
@@ -83,6 +85,14 @@ body {
 }
 
 .page__content {
+  h1 {
+    padding-bottom: 0.3em;
+    //border-bottom: 1px solid $border-color;
+    //border-bottom: 2px solid #0092ca;
+    //color: #35a8ad;
+    //color: #0092ca;
+    color: #00a00a;
+  }
   h2 {
     //padding-bottom: 0.5em;
     padding-bottom: 0.3em;
@@ -91,7 +101,7 @@ body {
     border-bottom: 2px solid #00b60a;
     //color: #35a8ad;
     //color: #0092ca;
-    color: #00b60a;
+    color: #00a00a;
   }
   h1,
   h2,
