@@ -94,7 +94,7 @@ analytics:
 author:
   name: 'Chanho Yoon'
   avatar: '/assets/images/profile.jpg'
-  bio: '**프론트엔드** 개발자를 꿈꾸는 중'
+  bio: '**프론트엔드 개발자**'
   location: 'Korea'
   email: chyoon0512@gmail.com
   links:
@@ -204,7 +204,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 6 # amount of posts to show / 페이지에 몇 개의 게시물을 기준으로 다음페이지로
+paginate: 8 # amount of posts to show / 페이지에 몇 개의 게시물을 기준으로 다음페이지로
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
