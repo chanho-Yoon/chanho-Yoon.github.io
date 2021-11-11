@@ -114,7 +114,7 @@ blockquote {
   //font-style       : italic;
   background-color           : #282c36;
   //border-left: 0.25em solid $primary-color;
-  border-left                : 0.13em solid #ec4899;
+  border-left                : 0.12em solid #dda23e;
   border-bottom-right-radius : 10px;
   p {
     color: #a1a1a1;
@@ -169,11 +169,11 @@ figcaption > code,
 td > code {
   padding-top    : 0.1rem;
   padding-bottom : 0.1rem;
-  font-size      : 0.8em;
+  font-size      : 0.85em;
   font-weight: bold;
   //background: $code-background-color;
   background     : #1f2937;
-  color          : #ec4899;
+  color          : #dda23e;
   border-radius  : $border-radius;
 
   &:before,
