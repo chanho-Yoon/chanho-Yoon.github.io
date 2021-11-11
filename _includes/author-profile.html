@@ -3,17 +3,17 @@
 
 <div itemscope itemtype="https://schema.org/Person">
   {% if author.avatar %}
-  <div class="author__avatar">
-    {% if author.home %}
-    <a target="_blank" href="{{ author.home | relative_url }}">
-      <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image" />
-    </a>
-    {% else %}
-    <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image" />
-    {% endif %}
-  </div>
+<!--  <div class="author__avatar">-->
+<!--    {% if author.home %}-->
+<!--    <a target="_blank" href="{{ author.home | relative_url }}">-->
+<!--      <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image" />-->
+<!--    </a>-->
+<!--    {% else %}-->
+<!--    <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image" />-->
+<!--    {% endif %}-->
+<!--  </div>-->
   {% endif %}
-
+  <br />
   <div class="author__content">
     {% if author.home %}
     <a target="_blank" href="{{ author.home | relative_url }}"
@@ -29,9 +29,9 @@
         잘못되거나 수정이 필요한 정보는 언제든 댓글 남겨주시면 감사하겠습니다.
       </p>
       <br />
-      <div class="author__tech">
-        <p>React(Hooks)</p> <p>Redux</p> <p>JS(ES6)</p> <p>typescript</p> <p>HTML5/CSS</p> <p>styled-component</p> <p>recoil</p> <p>React-query</p> <p>storybook</p> <p>Tailwind</p> <p>SCSS</p>
-      </div>
+<!--      <div class="author__tech">-->
+<!--        <p>React(Hooks)</p> <p>Redux</p> <p>JS(ES6)</p> <p>typescript</p> <p>HTML5/CSS</p> <p>styled-component</p> <p>recoil</p> <p>React-query</p> <p>storybook</p> <p>Tailwind</p> <p>SCSS</p>-->
+<!--      </div>-->
     </div>
     {% endif %}
   </div>

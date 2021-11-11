@@ -44,7 +44,6 @@
 
 @mixin clearfix {
   clear: both;
-
   &::after {
     clear: both;
     content: "";
@@ -87,7 +86,7 @@
   $light: $yiq-contrasted-light-default,
   $threshold: $yiq-contrasted-threshold
 ) {
-  background-color: #00ba0a;
+  background-color: $primary-color;
    color: white;
   //color: yiq-contrast-color($background-color, $dark, $light, $threshold);
 }

@@ -6,3 +6,10 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import 'minimal-mistakes'; // main partials
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap");
+  font-weight: normal;
+  font-style: normal;
+}

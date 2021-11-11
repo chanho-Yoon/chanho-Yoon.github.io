@@ -75,7 +75,8 @@ body {
 .page__title {
   margin-top: 0;
   line-height: 1;
-
+  font-size: 45px;
+  color: white;
   & + .page__meta {
     margin-top: -0.5em;
   }
@@ -87,23 +88,26 @@ body {
 }
 
 .page__content {
+  h1:not(:first-child){
+      margin-top: 50px;
+  }
   h1 {
-    padding-bottom: 0.3em;
-    //border-bottom: 1px solid $border-color;
-    //border-bottom: 2px solid #0092ca;
-    //color: #35a8ad;
+    border-bottom: 2px solid $border-color;
+    padding-bottom: 8px;
+    color: white;
+    font-size: 30px;
     //color: #0092ca;
-    color: #000000;
+    //color: #000000;
   }
   h2 {
     //padding-bottom: 0.5em;
     padding-bottom: 0.3em;
     //border-bottom: 1px solid $border-color;
     //border-bottom: 2px solid #0092ca;
-    border-bottom: 1px solid #afafaf;
-    //color: #35a8ad;
+    //border-bottom: 1px solid #afafaf;
+    color: white;
     //color: #0092ca;
-    color: #1a1a1a;
+    //color: #1a1a1a;
   }
   h1,
   h2,
@@ -533,6 +537,9 @@ body {
    ========================================================================== */
 
 .page__related {
+  &.posts {
+    width: 100%;
+  }
   @include clearfix();
   float: left;
   margin-top: 2em;

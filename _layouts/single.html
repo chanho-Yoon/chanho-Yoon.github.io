@@ -82,10 +82,10 @@ paginator %} {% include breadcrumbs.html %} {% endunless %} {% endif %}
     include comments.html %} {% endif %}
   </article>
 
-  <!-- 이부분 때문에 구글 서치 콘솔에서 가끔 색인 생성이 안되는 것 같음 -->
+  <!-- @TODO: 이부분 때문에 구글 서치 콘솔에서 가끔 색인 생성이 안되는 것 같음 -->
   <!-- only show related on a post page when `related: true` -->
   {% comment %}{% endcomment %} {% if page.id and page.related and site.related_posts.size > 0 %}
-  <div class="page__related">
+  <div class="page__related posts">
     <h4 class="page__related-title">
       {{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}
     </h4>
