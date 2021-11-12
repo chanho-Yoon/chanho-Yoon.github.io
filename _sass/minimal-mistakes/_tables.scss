@@ -17,7 +17,7 @@ table {
   border-collapse: collapse;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   overflow-x: auto;
-
+  border-radius: 15px !important;
   & + table {
     margin-top: 1em;
   }
@@ -30,8 +30,8 @@ table {
 
 thead {
   //background-color: $border-color;
-  background-color: #0092ca;
-  border-bottom: 2px solid mix(#3b3b3b, #0092ca, 25%);
+  background-color: #dda23e;
+  //border-bottom: 3px solid mix(#965a00, #dda23e, 25%);
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
