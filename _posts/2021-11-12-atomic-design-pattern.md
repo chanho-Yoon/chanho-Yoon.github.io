@@ -117,7 +117,7 @@ const Flex = React.forwardRef<HTMLDivElement, FlexProps>(
 ```
 ### molecules (분자)
 
-> 최소 2개, 최대 3개까지의 `atoms(원자)`를 기준으로 정했습니다. <br />또한 분자는 독립적으로 동작이 되어야한다는 것을 기준으로 정했습니다.
+> 최소 2개의 `atoms(원자)`를 합치는 것과 독립적으로 동작이 되어야한다는 것을 기준으로 정했습니다.
 
 - atoms로 만들어진 것을 이용해 합한 그룹으로 HashTag Box가 있다고 가정할 때 `Box` + `Span` 과 같이 조합하여 만들어집니다.
 - ```html
