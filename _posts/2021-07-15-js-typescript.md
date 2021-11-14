@@ -18,7 +18,46 @@ typescript는 브라우저가 이해하지 못하는 언어로 결국 javascript
 
 ## TypeScript를 사용하는 이유?
 
-예를 들어 아래와 같은 상황이 있을때 자바스크립트와 타입스크립트의 차이점을 알아보겠습니다.
+기존의 자바스크립트는 `PRIMITIVE` 와 `REFERENCE` 값이 존재한다. 먼저 아래의 예제를 보겠다.
+
+```js
+typeof 1         // 'number'
+typeof 'str'     // 'string'
+typeof true;     // 'boolean'
+typeof Symbol(); // 'symbol
+```
+
+`typeof`는 피연산자의 type의 형태를 string으로 반환하는 함수로 JS의 PRIMITIVE값으로 type을 아는데 큰 무리가 없다.
+하지만 아래와 같은 `REFERENCE TYPE`은 어떨까?
+
+```js
+const productList =[{
+  id: 1,
+  title: 'product1',
+  option: [{
+    id: 124,
+    name: 'option1'
+  }]
+}, {
+  id: 1,
+  title: 'product1',
+  option: [{
+    id: 124,
+    name: 'option1'
+  }]
+}]
+const student = {
+  name: 'Jone',
+  phone: 01012341234
+}
+const arr = ['aaa', 'bbb']
+
+// 결과는 모두 'object'를 반환한다.
+```
+
+이와 같이 `REFERENCE TYPE`은 type을 정확하게 추론할 수 있는 방법이 없다. 정확한 type추론이 안되는 상태에서 어떠한 타입의 값이 넘어오는지 어떠한 타입의 값을 넘겨야 하는지 어떤 타입 값이 필수값인지 알 수 있는 방법이 없다. 이러한 문제점을 보완하고자 나온 것이 `typescript` 이다.
+
+이외에도 자바스크립트와 타입스크립트의 차이점을 알아보겠습니다.
 
 ### 자바스크립트
 
@@ -38,9 +77,8 @@ console.log(number)
 두 개의 인자를 전달받아 더하는 함수이다. 함수의 이름만 보면 어떠한 함수인지 알 수 있다. <br> 
 하지만 만약 인자를 잘못전달하거나, 함수의 목적과는 다른 인자를 전달했을 때 자바스크립트는 알려주지 않는다.
 
-<br>
 
-이것은 원래 설계했던 함수의 목적에 맞지 않는다. <br>
+이것은 원래 의도했던 함수의 목적에 맞지 않는다. <br>
 이러한 단점을 극복해낼 수 있는 방법이 동적타입이 아닌 정적으로 타입을 지정해주면 해결할 수 있다.
 
 ### 타입스크립트
